@@ -1,0 +1,78 @@
+/* Las capturas no deben desbordar el ancho del texto */
+.md-typeset img { max-width: 100%; height: auto; }
+
+/* Colores de Odoo: morado #714B67 y verde azulado #017E84 */
+:root > * {
+  --md-primary-fg-color:        #714B67;
+  --md-primary-fg-color--light: #8F6A85;
+  --md-primary-fg-color--dark:  #5A3C52;
+  --md-primary-bg-color:        #FFFFFF;
+  --md-accent-fg-color:         #017E84;
+  --md-accent-fg-color--transparent: rgba(1, 126, 132, 0.1);
+  --md-typeset-a-color:         #017E84;
+}
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color:         #3FB8BE;
+  --md-accent-fg-color:         #3FB8BE;
+  --md-accent-fg-color--transparent: rgba(63, 184, 190, 0.1);
+}
+
+/* Logo de Appex en la barra superior: un poco más grande que el ícono por defecto */
+.md-header__button.md-logo img { height: 2.2rem; width: auto; }
+.md-header__button.md-logo { padding: 0.2rem 0.4rem; }
+
+/* Portada */
+.portada {
+  padding: 2rem 2rem 1.6rem;
+  margin: 0 0 1.5rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #714B67 0%, #5A3C52 100%);
+  color: #fff;
+}
+.md-typeset .portada h1 { color: #fff; font-weight: 600; margin: 0 0 0.3rem; }
+.md-typeset .portada .portada-sub { font-size: 1.05rem; opacity: 0.85; margin: 0 0 1rem; }
+.md-typeset .portada p { max-width: 38rem; }
+.md-typeset .portada .md-button { color: #fff; border-color: rgba(255,255,255,0.7); margin: 0.3rem 0.4rem 0 0; }
+.md-typeset .portada .md-button--primary { background: #017E84; border-color: #017E84; }
+.md-typeset .portada .md-button:hover { background: #fff; color: #714B67; border-color: #fff; }
+
+/* Tarjetas de la portada */
+.md-typeset .grid.cards > ul > li { border-radius: 0.5rem; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.md-typeset .grid.cards > ul > li:hover { border-color: var(--md-accent-fg-color); transform: translateY(-2px); }
+.md-typeset .grid.cards .lg { color: #714B67; width: 1.6rem; height: 1.6rem; vertical-align: middle; margin-right: 0.3rem; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards .lg { color: #C9A3BF; }
+.md-typeset .grid.cards > ul > li > p:first-child a { color: inherit; }
+.md-typeset .grid.cards > ul > li > hr { margin: 0.6rem 0; }
+/* Toda la tarjeta es clicable */
+.md-typeset .grid.cards > ul > li { position: relative; cursor: pointer; }
+.md-typeset .grid.cards > ul > li > p:first-child a::after { content: ""; position: absolute; inset: 0; }
+
+/* Pasos numerados: círculo de color y línea que une un paso con el siguiente.
+   Solo las listas numeradas del cuerpo de la página (no las anidadas ni las de tablas). */
+.md-typeset > ol { counter-reset: paso; list-style: none; padding-left: 0; margin-left: 0; }
+.md-typeset > ol > li {
+  counter-increment: paso;
+  position: relative;
+  margin-left: 0;
+  padding-left: 2.6rem;
+  padding-bottom: 0.6rem;
+}
+.md-typeset > ol > li::before {
+  content: counter(paso);
+  position: absolute; left: 0; top: 0;
+  width: 1.75rem; height: 1.75rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: #714B67; color: #fff;
+  font-size: 0.75rem; font-weight: 700;
+  box-shadow: 0 0 0 3px var(--md-default-bg-color);
+  z-index: 1;
+}
+.md-typeset > ol > li::after {
+  content: "";
+  position: absolute; left: calc(0.875rem - 1px); top: 1.75rem; bottom: -0.5rem;
+  width: 2px; background: rgba(113, 75, 103, 0.25);
+}
+.md-typeset > ol > li:last-child::after { display: none; }
+.md-typeset > ol > li > p:first-child { margin-top: 0; padding-top: 0.15rem; }
+[data-md-color-scheme="slate"] .md-typeset > ol > li::before { background: #8F6A85; }
+[data-md-color-scheme="slate"] .md-typeset > ol > li::after { background: rgba(201, 163, 191, 0.25); }

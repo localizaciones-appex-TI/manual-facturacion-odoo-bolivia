@@ -1,0 +1,117 @@
+site_name: Manual de facturación en Odoo — Bolivia (SIAT)
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+# Con --strict, un enlace roto o a un título inexistente detiene la construcción
+validation:
+  links:
+    anchors: warn
+
+theme:
+  name: material
+  language: es
+  logo: assets/logo-appex.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: es
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      zoomable: true
+      draggable: true
+      auto_caption: false
+
+nav:
+  - Inicio: index.md
+  - "Parte I. Configuración inicial":
+      - parte-1/index.md
+      - "1. Configuración de la Empresa": parte-1/01-configuracion-de-la-empresa.md
+      - "2. Configuración de Sucursales": parte-1/02-configuracion-de-sucursales.md
+      - "3. Configuración de Puntos de venta": parte-1/03-configuracion-de-puntos-de-venta.md
+      - "4. Catálogos del SIAT, actividades y productos": parte-1/04-catalogos-del-siat-actividades-y-productos.md
+      - "5. Homologación de datos con el SIAT": parte-1/05-homologacion-de-datos-con-el-siat.md
+  - "Parte II. Tipos de documento fiscal":
+      - parte-2/index.md
+      - "Factura de compra-venta": parte-2/factura-de-compra-venta.md
+      - "Nota de crédito-débito": parte-2/nota-de-credito-debito.md
+      - "Factura comercial de exportación": parte-2/factura-comercial-de-exportacion.md
+      - "Factura de productos alcanzados por el ICE": parte-2/factura-de-productos-alcanzados-por-el-ice.md
+      - "Factura de tasa cero (libros y transporte internacional de carga)": parte-2/factura-de-tasa-cero-libros-y-transporte-internaci.md
+      - "Factura de hospitales y clínicas": parte-2/factura-de-hospitales-y-clinicas.md
+      - "Factura de alquiler de bienes inmuebles": parte-2/factura-de-alquiler-de-bienes-inmuebles.md
+      - "Factura de importación y comercialización de lubricantes": parte-2/factura-de-importacion-y-comercializacion-de-lubri.md
+      - "Factura comercial de exportación en libre consignación": parte-2/factura-comercial-de-exportacion-en-libre-consigna.md
+      - "Factura de servicios turísticos y hospedaje": parte-2/factura-de-servicios-turisticos-y-hospedaje.md
+      - "Factura de compra y venta de moneda extranjera": parte-2/factura-de-compra-y-venta-de-moneda-extranjera.md
+      - "Factura duty free": parte-2/factura-duty-free.md
+      - "Factura de comercialización de hidrocarburos": parte-2/factura-de-comercializacion-de-hidrocarburos.md
+      - "Factura de entidades financieras": parte-2/factura-de-entidades-financieras.md
+      - "Factura de hoteles": parte-2/factura-de-hoteles.md
+      - "Factura prevalorada": parte-2/factura-prevalorada.md
+      - "Factura comercial de exportación de servicios": parte-2/factura-comercial-de-exportacion-de-servicios.md
+      - "Nota de conciliación": parte-2/nota-de-conciliacion.md
+      - "Factura de suministro de energía": parte-2/factura-de-suministro-de-energia.md
+      - "Factura de seguros": parte-2/factura-de-seguros.md
+      - "Factura prevalorada sin derecho a crédito fiscal": parte-2/factura-prevalorada-sin-derecho-a-credito-fiscal.md
+      - "Factura de compra-venta con bonificaciones": parte-2/factura-de-compra-venta-con-bonificaciones.md
+      - "Factura de comercialización de GNV": parte-2/factura-de-comercializacion-de-gnv.md
+      - "Factura de comercialización de GN y GLP": parte-2/factura-de-comercializacion-de-gn-y-glp.md
+      - "Factura de compra-venta tasas": parte-2/factura-de-compra-venta-tasas.md
+      - "Factura comercial de exportación precio venta": parte-2/factura-comercial-de-exportacion-precio-venta.md
+      - "Nota de crédito-débito con descuento": parte-2/nota-de-credito-debito-con-descuento.md
+      - "Nota de crédito-débito ICE": parte-2/nota-de-credito-debito-ice.md
+      - "Factura de comercialización de combustible": parte-2/factura-de-comercializacion-de-combustible.md
+      - "Factura de servicios básicos": parte-2/factura-de-servicios-basicos.md
+      - "Factura comercial de exportación de minerales": parte-2/factura-comercial-de-exportacion-de-minerales.md
+  - "Parte III. Operaciones comunes":
+      - parte-3/index.md
+      - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
+      - "2. Facturación fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
+      - "3. Lista de verificación para pasar a producción": parte-3/03-lista-de-verificacion-para-pasar-a-produccion.md
+  - "Anexo. Glosario": glosario.md
