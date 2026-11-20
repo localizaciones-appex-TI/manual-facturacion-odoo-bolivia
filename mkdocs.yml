@@ -113,5 +113,4 @@ nav:
       - parte-3/index.md
       - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
       - "2. Facturación fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
-      - "3. Lista de verificación para pasar a producción": parte-3/03-lista-de-verificacion-para-pasar-a-produccion.md
   - "Anexo. Glosario": glosario.md

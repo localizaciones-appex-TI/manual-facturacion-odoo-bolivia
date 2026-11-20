@@ -51,11 +51,11 @@ Cómo configurar Odoo y emitir, anular y regularizar cada documento fiscal ante 
 
     Eventos significativos, facturas fuera de línea y talonarios de contingencia con CAFC.
 
--   :material-clipboard-check-outline:{ .lg } **[Pasar a producción](parte-3/03-lista-de-verificacion-para-pasar-a-produccion.md)**
+-   :material-store-plus:{ .lg } **[Agregar una sucursal](parte-1/02-configuracion-de-sucursales.md#24-agregar-una-sucursal-nueva)**
 
     ---
 
-    Lo que hay que revisar antes, durante y después de empezar a facturar con valor legal.
+    Qué registrar ante Impuestos Nacionales y cómo crear la sucursal y sus puntos de venta en Odoo.
 
 </div>
 
