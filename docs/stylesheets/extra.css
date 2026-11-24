@@ -140,3 +140,10 @@
 .md-typeset > ol > li > p:first-child { margin-top: 0; padding-top: 0.15rem; }
 [data-md-color-scheme="slate"] .md-typeset > ol > li::before { background: #8F6A85; }
 [data-md-color-scheme="slate"] .md-typeset > ol > li::after { background: rgba(201, 163, 191, 0.25); }
+
+/* Pie de página en el morado de Odoo, más oscuro que la barra superior */
+.md-footer { background-color: #4A3045; }
+.md-footer-meta { background-color: #3A2536; }
+.md-footer-meta__inner { align-items: center; }
+.md-copyright { font-size: 0.7rem; }
+.md-footer__link:hover, .md-social__link:hover { opacity: 0.8; }

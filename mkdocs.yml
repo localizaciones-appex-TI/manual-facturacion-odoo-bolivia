@@ -67,6 +67,16 @@ plugins:
       draggable: true
       auto_caption: false
 
+copyright: >-
+  &copy; 2026 Appex Bolivia SRL · Manual de usuario de facturación en Odoo
+
+extra:
+  generator: false
+  social:
+    - icon: material/web
+      link: https://www.appexbo.com/
+      name: Appex Bolivia
+
 nav:
   - Inicio: index.md
   - "Parte I. Configuración inicial":
