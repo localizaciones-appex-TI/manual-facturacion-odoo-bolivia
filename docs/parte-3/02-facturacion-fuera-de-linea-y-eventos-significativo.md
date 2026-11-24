@@ -1,4 +1,4 @@
-# 2. Facturación fuera de línea y eventos significativos
+# 2. Si el SIN no responde: fuera de línea y eventos significativos
 
 La facturación en línea depende de la conexión con el SIAT: cada factura se autoriza en el momento de emitirla. Cuando esa conexión se interrumpe, la normativa permite seguir facturando sin conexión y regularizar las facturas después. Para eso existe el botón Fuera de línea del punto de venta y el menú Eventos significativos.
 

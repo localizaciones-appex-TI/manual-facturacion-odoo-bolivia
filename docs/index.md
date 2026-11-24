@@ -4,18 +4,30 @@ hide:
   - toc
 ---
 
-<div class="portada" markdown>
+<div class="hero" markdown>
+<div class="hero-texto" markdown>
 
-# Manual de facturación en Odoo
+<p class="hero-etiqueta">Manual de usuario · SIAT</p>
 
-<p class="portada-sub">Bolivia · Sistema de Facturación en Línea (SIAT)</p>
+# Facturación electrónica en Odoo. <span class="hero-tenue">Paso a paso, para Bolivia.</span>
 
-Cómo configurar Odoo y emitir, anular y regularizar cada documento fiscal ante el SIN, paso a paso y con capturas de pantalla.
+Cómo configurar Odoo y emitir, anular y regularizar cada documento fiscal ante el SIN, con capturas de cada pantalla.
 
 [Empezar por la configuración](parte-1/index.md){ .md-button .md-button--primary }
 [Ver los tipos de documento](parte-2/index.md){ .md-button }
 
 </div>
+<div class="hero-imagen">
+<div class="pantalla">
+<div class="pantalla-barra"><span></span><span></span><span></span></div>
+<img src="assets/portada-factura.webp" alt="Factura de compra-venta validada en Odoo">
+</div>
+</div>
+</div>
+
+!!! danger "¿El SIN no responde o está en mantenimiento?"
+
+    No deje de vender: ponga el punto de venta **fuera de línea**, siga facturando y, cuando el SIN vuelva, las facturas se envían solas. [Ver qué hacer paso a paso →](parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md#21-si-el-sin-no-responde-que-hacer-paso-a-paso)
 
 ## ¿Qué necesita hacer?
 
@@ -45,11 +57,11 @@ Cómo configurar Odoo y emitir, anular y regularizar cada documento fiscal ante 
 
     Cuándo anular una factura y cuándo emitir una nota de crédito, y cómo revertir una anulación.
 
--   :material-wifi-off:{ .lg } **[Facturar sin conexión](parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md)**
+-   :material-wifi-off:{ .lg } **[El SIN no responde](parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md#21-si-el-sin-no-responde-que-hacer-paso-a-paso)**
 
     ---
 
-    Eventos significativos, facturas fuera de línea y talonarios de contingencia con CAFC.
+    Qué hacer si el SIN está en mantenimiento o se corta internet: facturar fuera de línea, eventos significativos y contingencia con CAFC.
 
 -   :material-store-plus:{ .lg } **[Agregar una sucursal](parte-1/02-configuracion-de-sucursales.md#24-agregar-una-sucursal-nueva)**
 
