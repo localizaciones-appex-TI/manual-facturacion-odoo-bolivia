@@ -47,6 +47,8 @@ extra_css:
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -124,4 +126,5 @@ nav:
       - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
       - "2. Si el SIN no responde: fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
       - "3. Descuento global": parte-3/03-descuento-global.md
+  - "Preguntas frecuentes": preguntas-frecuentes.md
   - "Glosario": glosario.md

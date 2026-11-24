@@ -226,3 +226,29 @@
 }
 @keyframes perilla-al-oscuro { from { transform: translateX(-1.4rem); } to { transform: none; } }
 @keyframes perilla-al-claro { from { transform: translateX(1.4rem); } to { transform: none; } }
+
+/* Preguntas frecuentes: desplegables en los colores del sitio */
+.md-typeset details.question {
+  border: 1px solid rgba(113, 75, 103, 0.18);
+  border-radius: 0.6rem;
+  box-shadow: none;
+  font-size: 0.8rem;
+}
+.md-typeset details.question > summary {
+  padding-top: 0.7rem; padding-bottom: 0.7rem;
+  background-color: transparent;
+  font-size: 0.82rem; font-weight: 600;
+}
+.md-typeset details.question > summary:hover { background-color: rgba(113, 75, 103, 0.05); }
+.md-typeset details.question[open] { border-color: rgba(113, 75, 103, 0.45); }
+.md-typeset details.question[open] > summary { background-color: rgba(113, 75, 103, 0.07); }
+.md-typeset details.question > summary::before { background-color: #714B67; top: 0.75rem; }
+.md-typeset details.question > summary::after { top: 0.75rem; }
+[data-md-color-scheme="slate"] .md-typeset details.question { border-color: rgba(201, 163, 191, 0.22); }
+[data-md-color-scheme="slate"] .md-typeset details.question[open] > summary { background-color: rgba(201, 163, 191, 0.08); }
+[data-md-color-scheme="slate"] .md-typeset details.question > summary::before { background-color: #C9A3BF; }
+.md-typeset details.question > summary::after { background-color: #714B67; }
+.md-typeset details.question:focus-within,
+.md-typeset details.question > summary:focus { box-shadow: none; outline: none; }
+.md-typeset details.question > summary:focus-visible { outline: 2px solid rgba(113, 75, 103, 0.5); outline-offset: -2px; }
+[data-md-color-scheme="slate"] .md-typeset details.question > summary::after { background-color: #C9A3BF; }
