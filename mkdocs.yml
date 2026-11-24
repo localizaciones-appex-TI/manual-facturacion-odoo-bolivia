@@ -78,39 +78,40 @@ nav:
       - "5. Homologación de datos con el SIAT": parte-1/05-homologacion-de-datos-con-el-siat.md
   - "Parte II. Tipos de documento fiscal":
       - parte-2/index.md
-      - "Factura de compra-venta": parte-2/factura-de-compra-venta.md
-      - "Nota de crédito-débito": parte-2/nota-de-credito-debito.md
-      - "Factura comercial de exportación": parte-2/factura-comercial-de-exportacion.md
-      - "Factura de productos alcanzados por el ICE": parte-2/factura-de-productos-alcanzados-por-el-ice.md
-      - "Factura de tasa cero (libros y transporte internacional de carga)": parte-2/factura-de-tasa-cero-libros-y-transporte-internaci.md
-      - "Factura de hospitales y clínicas": parte-2/factura-de-hospitales-y-clinicas.md
-      - "Factura de alquiler de bienes inmuebles": parte-2/factura-de-alquiler-de-bienes-inmuebles.md
-      - "Factura de importación y comercialización de lubricantes": parte-2/factura-de-importacion-y-comercializacion-de-lubri.md
-      - "Factura comercial de exportación en libre consignación": parte-2/factura-comercial-de-exportacion-en-libre-consigna.md
-      - "Factura de servicios turísticos y hospedaje": parte-2/factura-de-servicios-turisticos-y-hospedaje.md
-      - "Factura de compra y venta de moneda extranjera": parte-2/factura-de-compra-y-venta-de-moneda-extranjera.md
-      - "Factura duty free": parte-2/factura-duty-free.md
-      - "Factura de comercialización de hidrocarburos": parte-2/factura-de-comercializacion-de-hidrocarburos.md
-      - "Factura de entidades financieras": parte-2/factura-de-entidades-financieras.md
-      - "Factura de hoteles": parte-2/factura-de-hoteles.md
-      - "Factura prevalorada": parte-2/factura-prevalorada.md
-      - "Factura comercial de exportación de servicios": parte-2/factura-comercial-de-exportacion-de-servicios.md
-      - "Nota de conciliación": parte-2/nota-de-conciliacion.md
-      - "Factura de suministro de energía": parte-2/factura-de-suministro-de-energia.md
-      - "Factura de seguros": parte-2/factura-de-seguros.md
-      - "Factura prevalorada sin derecho a crédito fiscal": parte-2/factura-prevalorada-sin-derecho-a-credito-fiscal.md
-      - "Factura de compra-venta con bonificaciones": parte-2/factura-de-compra-venta-con-bonificaciones.md
-      - "Factura de comercialización de GNV": parte-2/factura-de-comercializacion-de-gnv.md
-      - "Factura de comercialización de GN y GLP": parte-2/factura-de-comercializacion-de-gn-y-glp.md
-      - "Factura de compra-venta tasas": parte-2/factura-de-compra-venta-tasas.md
-      - "Factura comercial de exportación precio venta": parte-2/factura-comercial-de-exportacion-precio-venta.md
-      - "Nota de crédito-débito con descuento": parte-2/nota-de-credito-debito-con-descuento.md
-      - "Nota de crédito-débito ICE": parte-2/nota-de-credito-debito-ice.md
-      - "Factura de comercialización de combustible": parte-2/factura-de-comercializacion-de-combustible.md
-      - "Factura de servicios básicos": parte-2/factura-de-servicios-basicos.md
-      - "Factura comercial de exportación de minerales": parte-2/factura-comercial-de-exportacion-de-minerales.md
+      - "1 - Factura de compra-venta": parte-2/factura-de-compra-venta.md
+      - "2 - Factura de alquiler de bienes inmuebles": parte-2/factura-de-alquiler-de-bienes-inmuebles.md
+      - "3 - Factura comercial de exportación": parte-2/factura-comercial-de-exportacion.md
+      - "4 - Factura comercial de exportación en libre consignación": parte-2/factura-comercial-de-exportacion-en-libre-consigna.md
+      - "6 - Factura de servicios turísticos y hospedaje": parte-2/factura-de-servicios-turisticos-y-hospedaje.md
+      - "8 - Factura de tasa cero (libros y transporte internacional de carga)": parte-2/factura-de-tasa-cero-libros-y-transporte-internaci.md
+      - "9 - Factura de compra y venta de moneda extranjera": parte-2/factura-de-compra-y-venta-de-moneda-extranjera.md
+      - "10 - Factura duty free": parte-2/factura-duty-free.md
+      - "12 - Factura de comercialización de hidrocarburos": parte-2/factura-de-comercializacion-de-hidrocarburos.md
+      - "13 - Factura de servicios básicos": parte-2/factura-de-servicios-basicos.md
+      - "14 - Factura de productos alcanzados por el ICE": parte-2/factura-de-productos-alcanzados-por-el-ice.md
+      - "15 - Factura de entidades financieras": parte-2/factura-de-entidades-financieras.md
+      - "16 - Factura de hoteles": parte-2/factura-de-hoteles.md
+      - "17 - Factura de hospitales y clínicas": parte-2/factura-de-hospitales-y-clinicas.md
+      - "20 - Factura comercial de exportación de minerales": parte-2/factura-comercial-de-exportacion-de-minerales.md
+      - "23 - Factura prevalorada": parte-2/factura-prevalorada.md
+      - "24 - Nota de crédito-débito": parte-2/nota-de-credito-debito.md
+      - "28 - Factura comercial de exportación de servicios": parte-2/factura-comercial-de-exportacion-de-servicios.md
+      - "29 - Nota de conciliación": parte-2/nota-de-conciliacion.md
+      - "31 - Factura de suministro de energía": parte-2/factura-de-suministro-de-energia.md
+      - "34 - Factura de seguros": parte-2/factura-de-seguros.md
+      - "35 - Factura de compra-venta con bonificaciones": parte-2/factura-de-compra-venta-con-bonificaciones.md
+      - "36 - Factura prevalorada sin derecho a crédito fiscal": parte-2/factura-prevalorada-sin-derecho-a-credito-fiscal.md
+      - "37 - Factura de comercialización de GNV": parte-2/factura-de-comercializacion-de-gnv.md
+      - "39 - Factura de comercialización de GN y GLP": parte-2/factura-de-comercializacion-de-gn-y-glp.md
+      - "41 - Factura de compra-venta tasas": parte-2/factura-de-compra-venta-tasas.md
+      - "44 - Factura de importación y comercialización de lubricantes": parte-2/factura-de-importacion-y-comercializacion-de-lubri.md
+      - "45 - Factura comercial de exportación precio venta": parte-2/factura-comercial-de-exportacion-precio-venta.md
+      - "47 - Nota de crédito-débito con descuento": parte-2/nota-de-credito-debito-con-descuento.md
+      - "48 - Nota de crédito-débito ICE": parte-2/nota-de-credito-debito-ice.md
+      - "55 - Factura de comercialización de combustible": parte-2/factura-de-comercializacion-de-combustible.md
   - "Parte III. Operaciones comunes":
       - parte-3/index.md
       - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
       - "2. Facturación fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
+      - "3. Descuento global": parte-3/03-descuento-global.md
   - "Anexo. Glosario": glosario.md
