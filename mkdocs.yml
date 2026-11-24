@@ -1,4 +1,4 @@
-site_name: Manual de facturación en Odoo — Bolivia (SIAT)
+site_name: Manual de facturación en Odoo
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
@@ -32,15 +32,15 @@ theme:
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-7
-        name: Modo oscuro
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-4
-        name: Modo claro
+        icon: material/weather-night
+        name: Cambiar a modo claro
 
 extra_css:
   - stylesheets/extra.css
@@ -79,14 +79,14 @@ extra:
 
 nav:
   - Inicio: index.md
-  - "Parte I. Configuración inicial":
+  - "I · Configuración inicial":
       - parte-1/index.md
       - "1. Configuración de la Empresa": parte-1/01-configuracion-de-la-empresa.md
       - "2. Configuración de Sucursales": parte-1/02-configuracion-de-sucursales.md
       - "3. Configuración de Puntos de venta": parte-1/03-configuracion-de-puntos-de-venta.md
       - "4. Catálogos del SIAT, actividades y productos": parte-1/04-catalogos-del-siat-actividades-y-productos.md
       - "5. Homologación de datos con el SIAT": parte-1/05-homologacion-de-datos-con-el-siat.md
-  - "Parte II. Tipos de documento fiscal":
+  - "II · Tipos de documento":
       - parte-2/index.md
       - "1 - Factura de compra-venta": parte-2/factura-de-compra-venta.md
       - "2 - Factura de alquiler de bienes inmuebles": parte-2/factura-de-alquiler-de-bienes-inmuebles.md
@@ -119,9 +119,9 @@ nav:
       - "47 - Nota de crédito-débito con descuento": parte-2/nota-de-credito-debito-con-descuento.md
       - "48 - Nota de crédito-débito ICE": parte-2/nota-de-credito-debito-ice.md
       - "55 - Factura de comercialización de combustible": parte-2/factura-de-comercializacion-de-combustible.md
-  - "Parte III. Operaciones comunes":
+  - "III · Operaciones comunes":
       - parte-3/index.md
       - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
       - "2. Si el SIN no responde: fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
       - "3. Descuento global": parte-3/03-descuento-global.md
-  - "Anexo. Glosario": glosario.md
+  - "Glosario": glosario.md

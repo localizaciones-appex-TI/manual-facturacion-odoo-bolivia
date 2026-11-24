@@ -147,3 +147,82 @@
 .md-footer-meta__inner { align-items: center; }
 .md-copyright { font-size: 0.7rem; }
 .md-footer__link:hover, .md-social__link:hover { opacity: 0.8; }
+
+/* Barra superior blanca: logo y nombre en oscuro, pestañas cortas con la activa subrayada en morado */
+.md-header {
+  background-color: #fff;
+  color: #2b2b2b;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+.md-header--shadow { box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07), 0 0.3rem 0.8rem -0.4rem rgba(0, 0, 0, 0.15); }
+.md-header__title { font-weight: 700; color: #2b2b2b; }
+.md-header__button { color: #714B67; }
+.md-tabs {
+  background-color: #fff;
+  color: #5c5c5c;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.md-tabs__link { opacity: 1; font-size: 0.75rem; font-weight: 500; margin-top: 0.55rem; }
+.md-tabs__link:hover { color: #714B67; }
+.md-tabs__item { height: 2.6rem; }
+.md-tabs__item--active .md-tabs__link { color: #714B67; font-weight: 700; }
+.md-tabs__item--active { box-shadow: inset 0 -3px 0 #714B67; }
+/* Buscador sobre fondo claro */
+.md-search__form { background-color: #f2f0f2; border-radius: 0.5rem; }
+.md-search__form:hover { background-color: #ebe7ea; }
+.md-search__input, .md-search__input::placeholder, .md-search__icon { color: #5c5c5c; }
+
+/* Modo oscuro: la misma barra, sobre el fondo oscuro */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs { background-color: #1e1f26; color: #d6d6d9; }
+[data-md-color-scheme="slate"] .md-header__title { color: #ececef; }
+[data-md-color-scheme="slate"] .md-header__button { color: #C9A3BF; }
+[data-md-color-scheme="slate"] .md-tabs__item--active .md-tabs__link,
+[data-md-color-scheme="slate"] .md-tabs__link:hover { color: #C9A3BF; }
+[data-md-color-scheme="slate"] .md-tabs__item--active { box-shadow: inset 0 -3px 0 #C9A3BF; }
+[data-md-color-scheme="slate"] .md-search__form { background-color: #2a2b33; }
+[data-md-color-scheme="slate"] .md-search__input,
+[data-md-color-scheme="slate"] .md-search__input::placeholder,
+[data-md-color-scheme="slate"] .md-search__icon { color: #c4c4c8; }
+
+/* Interruptor de modo claro / oscuro: una píldora con una bolita que se desliza */
+.md-header__option[data-md-component="palette"] .md-header__button.md-icon {
+  position: relative;
+  width: 2.9rem;
+  height: 1.5rem;
+  margin: 0 0.6rem;
+  padding: 0;
+  border-radius: 999px;
+  background: #ece6ea;
+  box-shadow: inset 0 0 0 1px rgba(113, 75, 103, 0.18);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.md-header__option[data-md-component="palette"] .md-header__button.md-icon svg {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0.18rem;
+  border-radius: 50%;
+  background: #fff;
+  fill: #E8A33A;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+  animation: perilla-al-claro 0.3s ease;
+}
+.md-header__option[data-md-component="palette"] .md-header__button.md-icon:hover { background: #e2d8df; }
+/* Modo oscuro: fondo morado y la bolita (con la luna) a la derecha */
+[data-md-color-scheme="slate"] .md-header__option[data-md-component="palette"] .md-header__button.md-icon {
+  background: #714B67;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+[data-md-color-scheme="slate"] .md-header__option[data-md-component="palette"] .md-header__button.md-icon svg {
+  left: auto;
+  right: 0.15rem;
+  background: #1e1f26;
+  fill: #F2D27A;
+  animation: perilla-al-oscuro 0.3s ease;
+}
+@keyframes perilla-al-oscuro { from { transform: translateX(-1.4rem); } to { transform: none; } }
+@keyframes perilla-al-claro { from { transform: translateX(1.4rem); } to { transform: none; } }
