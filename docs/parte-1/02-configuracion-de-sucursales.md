@@ -77,4 +77,4 @@ Cuando la empresa abre un local nuevo donde vende y factura, ese local es una su
 
 1. **Cargar las secuencias** de los tipos de documento que se van a emitir en cada punto de venta (sección 3.5).
 
-1. **Comprobar con la primera factura.** Emita la primera factura desde un punto de venta de la sucursal y verifique que quede VALIDADA y que la dirección impresa sea la de la sucursal.
+1. **Comprobar con la primera factura.** Emita la primera factura desde un punto de venta de la sucursal y verifique que quede `VALIDADA` y que la dirección impresa sea la de la sucursal.

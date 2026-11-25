@@ -8,11 +8,11 @@ Esta guía es para el caso más común: el SIN está en mantenimiento o no respo
 
 !!! warning "Importante"
 
-    Odoo no pasa solo a fuera de línea. Si el SIN no responde, al confirmar una factura aparece «Sin conexión con los servicios del SIN» y la factura queda en borrador. Hay que poner el punto de venta fuera de línea a mano, como se explica abajo.
+    Odoo no pasa solo a fuera de línea. Si el SIN no responde, al confirmar una factura aparece `Sin conexión con los servicios del SIN` y la factura queda en borrador. Hay que poner el punto de venta fuera de línea a mano, como se explica abajo.
 
 ### Cómo darse cuenta
 
-- Al confirmar una factura aparece **«Sin conexión con los servicios del SIN»**, o la confirmación tarda y termina en error.
+- Al confirmar una factura aparece `Sin conexión con los servicios del SIN`, o la confirmación tarda y termina en error.
 - En el punto de venta, el botón **Verificar conexión con SIAT** (sección 3.4 de la Parte I) no confirma la conexión.
 - El SIN publica con anticipación los **mantenimientos programados**: conviene estar atento a sus avisos.
 
@@ -36,13 +36,13 @@ Esta guía es para el caso más común: el SIN está en mantenimiento o no respo
 
 1. **Entregar la factura al cliente** como siempre: impresa o en PDF. Es válida desde que se emite y lleva una leyenda que indica que fue emitida fuera de línea. El cliente puede verificarla en el SIAT cuando termine la contingencia.
 
-1. **Cuando el SIN vuelva, pulsar En línea** en el mismo punto de venta. Odoo comprueba la conexión, pide un CUFD nuevo, cierra el evento con la hora actual, lo registra en el SIN y envía todas las facturas del evento en paquetes. Si el SIN todavía no responde, aparece «Sin CONEXIÓN con el SIAT» y el punto de venta sigue fuera de línea: espere y vuelva a intentar.
+1. **Cuando el SIN vuelva, pulsar En línea** en el mismo punto de venta. Odoo comprueba la conexión, pide un CUFD nuevo, cierra el evento con la hora actual, lo registra en el SIN y envía todas las facturas del evento en paquetes. Si el SIN todavía no responde, aparece `Sin CONEXIÓN con el SIAT` y el punto de venta sigue fuera de línea: espere y vuelva a intentar.
 
 1. **Comprobar que todo quedó validado:**
 
     - Ajustes → Facturación (BO) → Compañia → **Eventos Significativos**: el evento figura con estado **Enviado**.
-    - Ajustes → Facturación (BO) → Compañia → **Paquetes**: el paquete del evento tiene sus líneas en **908 - VALIDADA**.
-    - En cada factura, el campo **Estado EDI** dice **VALIDADA**.
+    - Ajustes → Facturación (BO) → Compañia → **Paquetes**: el paquete del evento tiene sus líneas en `908 - VALIDADA`.
+    - En cada factura, el campo **Estado EDI** dice `VALIDADA`.
 
 !!! note "Nota"
 
@@ -50,7 +50,7 @@ Esta guía es para el caso más común: el SIN está en mantenimiento o no respo
 
 ### Qué no se puede hacer mientras el punto de venta está fuera de línea
 
-- **Notas de crédito-débito y otros documentos de ajuste:** Odoo responde «SERVICIO NO DISPONIBLE». Se emiten cuando el punto de venta vuelve a estar en línea.
+- **Notas de crédito-débito y otros documentos de ajuste:** Odoo responde `SERVICIO NO DISPONIBLE`. Se emiten cuando el punto de venta vuelve a estar en línea.
 - **Anular o revertir facturas:** la anulación se hace contra el SIN, así que hay que esperar a que responda (sección 1).
 
 ### Si algo falla al volver en línea
@@ -125,4 +125,4 @@ En los eventos 5, 6 y 7 el que falla es el propio sistema de facturación, así 
 
     El número que Odoo asigna sale de la Secuencia Actual del CAFC, no del papel. Si las facturas se cargan en otro orden, o se salta una, los números de Odoo dejan de coincidir con los del talonario. Antes de confirmar, compare la Secuencia Actual con el número de la factura en papel. El plazo para regularizar las facturas por contingencia es de 72 horas desde que se restablece el sistema (sección 2.3).
 
-Si al confirmar aparece «No se encontró CAFC's vinculados al documento» o «No se encontró un código CAFC para la Actividad Económica asociada», falta cargar el CAFC de ese tipo de documento y actividad. Si aparece «Ha llegado al final de la secuencia para el CAFC», el talonario se agotó y hay que registrar el siguiente. Las facturas prevaloradas (tipos 23 y 36) no admiten emisión con CAFC.
+Si al confirmar aparece `No se encontró CAFC's vinculados al documento` o «No se encontró un código CAFC para la Actividad Económica asociada», falta cargar el CAFC de ese tipo de documento y actividad. Si aparece `Ha llegado al final de la secuencia para el CAFC`, el talonario se agotó y hay que registrar el siguiente. Las facturas prevaloradas (tipos 23 y 36) no admiten emisión con CAFC.

@@ -15,5 +15,5 @@
 | Leyenda | Frase de la Ley 453 que debe llevar cada factura, según la actividad económica. |
 | Código SIAT | Código del producto o servicio en el catálogo del SIN, siempre ligado a una actividad económica. |
 | Código Nandina | Clasificación arancelaria que se informa para los bienes. |
-| Estado EDI | Respuesta del SIN sobre la factura (VALIDADA, OBSERVADA, ANULACIÓN CONFIRMADA, etc.). |
+| Estado EDI | Respuesta del SIN sobre la factura (`VALIDADA`, `OBSERVADA`, `ANULACIÓN CONFIRMADA`, etc.). |
 | Tipo Entorno | Ambiente del SIN al que se conecta el punto de venta: 1 producción, 2 pruebas (piloto). |

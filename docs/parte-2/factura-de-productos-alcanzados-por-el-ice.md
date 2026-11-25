@@ -1,6 +1,6 @@
 # Factura de productos alcanzados por el ICE
 
-Es la factura que se emite al vender productos alcanzados por el Impuesto a los Consumos Específicos (ICE), como gaseosas, cervezas, vinos y singanis. En Odoo aparece como tipo de documento **14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE**; ante el SIAT es el documento sector 14 y da derecho a crédito fiscal. Además del precio, cada línea informa al SIN el ICE que le corresponde. Queda emitida cuando el SIN la devuelve como **VALIDADA (código 908)**.
+Es la factura que se emite al vender productos alcanzados por el Impuesto a los Consumos Específicos (ICE), como gaseosas, cervezas, vinos y singanis. En Odoo aparece como tipo de documento `14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE`; ante el SIAT es el documento sector 14 y da derecho a crédito fiscal. Además del precio, cada línea informa al SIN el ICE que le corresponde. Queda emitida cuando el SIN la devuelve como **`VALIDADA` (código `908`)**.
 
 ## Qué debe estar configurado
 
@@ -10,11 +10,11 @@ Además de la configuración general de la Parte I, la factura ICE necesita esto
 
     ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-01.webp){ width="624" height="428" loading="lazy" }
 
-- **Tipo de documento 14 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 14 - FICE»; depende de la actividad económica registrada en el SIN).
+- **Tipo de documento 14 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila `14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE`: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, `6202000 - 14 - FICE`; depende de la actividad económica registrada en el SIN).
 
     ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-02.webp){ width="624" height="428" loading="lazy" }
 
-- **Secuencia en cada punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar 14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
+- **Secuencia en cada punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar `14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE`. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
     ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-03.webp){ width="624" height="428" loading="lazy" }
 
@@ -50,7 +50,7 @@ Con esos datos, ICE específico = litros × alícuota específica, e ICE porcent
 
 1. **Abrir una factura nueva:** Contabilidad → Clientes → Facturas → botón Nuevo, y elegir el cliente en el campo Contacto.
 
-1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE**.
+1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, `14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE`.
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: productos con su Nandina, cantidad y precio. El precio se carga sin ICE; el ICE se agrega al enviar la factura al SIN.
 
@@ -58,13 +58,13 @@ Con esos datos, ICE específico = litros × alícuota específica, e ICE porcent
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
-1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
+1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI `VALIDADA`.
 
     ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-07.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo saber si llegó al SIN
 
-Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice **VALIDADA**. La factura ICE tiene su propia numeración por punto de venta (la secuencia 14), separada de la de compra-venta.
+Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice `VALIDADA`. La factura ICE tiene su propia numeración por punto de venta (la secuencia 14), separada de la de compra-venta.
 
 **El total para el SIN incluye el ICE.** El total de la factura en Odoo no lo suma, pero el que se informa al SIN sí. Por ejemplo, una factura que en Odoo muestra 1.670,00 Bs se registra en el SIN por 1.906,65 Bs: el total más 164,00 Bs de ICE específico y 72,65 Bs de ICE porcentual.
 
@@ -77,4 +77,4 @@ Los errores de la sección [Factura de compra-venta › Errores frecuentes y có
 | «EL CALCULO DE ICE ESPECIFICO ES ERRONEO Monto ice especifico esperado … enviado …» | Los litros de la línea (cantidad ÷ Factor) tienen más de cinco decimales, por ejemplo con envases de 750 ml o 330 ml, y el SIN redondea distinto que Odoo. | Usar envases que den litros exactos (2 L, 1 L, 500 ml, 250 ml) y su Factor correspondiente en la Nandina. La factura queda en borrador y se vuelve a confirmar. |
 | «EL CALCULO DEL MONTO TOTAL ES ERRONEO Monto total esperado … enviado …» o «EL MONTO ICE PORCENTUAL ES ERRONEO Monto Ice porcentual esperado … enviado …» (diferencia de un centavo) | El ICE de alguna línea termina en medio centavo (por ejemplo, 11 gaseosas de 250 ml dan 1,375 Bs de ICE específico; cada vino de 70 Bs, 3,045 Bs de ICE porcentual) y Odoo redondea para un lado y el SIN para el otro. | Cambiar la cantidad de esa línea para que el ICE no termine en medio centavo (por ejemplo, 12 en lugar de 11) y volver a confirmar; la factura queda en borrador. Si se repite, avisar al equipo técnico: es un redondeo del módulo. |
 | Las líneas salen sin ICE (montos en cero) | La Nandina del producto tiene en cero el ICE Específico y el ICE Porcentual. | Cargar las tasas y el Factor en Códigos Nandina (sección [Cómo se calcula el ICE](#como-se-calcula-el-ice)) antes de emitir. |
-| En Tipo Documento no aparece 14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE | Falta el módulo ICE, el tipo 14 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
+| En Tipo Documento no aparece `14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE` | Falta el módulo ICE, el tipo 14 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |

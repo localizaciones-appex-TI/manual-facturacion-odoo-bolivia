@@ -1,6 +1,6 @@
 # Factura de hoteles
 
-Es la factura de hoteles, hostales y demás alojamientos por el hospedaje de huéspedes nacionales o residentes en Bolivia. Es un documento distinto de la factura de servicios turísticos y hospedaje (sección [Factura de servicios turísticos y hospedaje](factura-de-servicios-turisticos-y-hospedaje.md)). En Odoo aparece como tipo de documento **16 - FACTURA DE HOTELES**; ante el SIAT es el documento sector 16. Además de las líneas, informa la **fecha de ingreso** (obligatoria), el **tipo de habitación** de cada línea y la **lista de huéspedes**, con su documento y país. Queda emitida cuando el SIN la devuelve como **VALIDADA (código 908)**.
+Es la factura de hoteles, hostales y demás alojamientos por el hospedaje de huéspedes nacionales o residentes en Bolivia. Es un documento distinto de la factura de servicios turísticos y hospedaje (sección [Factura de servicios turísticos y hospedaje](factura-de-servicios-turisticos-y-hospedaje.md)). En Odoo aparece como tipo de documento `16 - FACTURA DE HOTELES`; ante el SIAT es el documento sector 16. Además de las líneas, informa la **fecha de ingreso** (obligatoria), el **tipo de habitación** de cada línea y la **lista de huéspedes**, con su documento y país. Queda emitida cuando el SIN la devuelve como **`VALIDADA` (código `908`)**.
 
 ## Qué debe estar configurado
 
@@ -10,7 +10,7 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
     ![Captura](../img/parte-2/15-factura-de-hoteles-01.webp){ width="624" height="428" loading="lazy" }
 
-- **Tipo de documento 16 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «16 - FACTURA DE HOTELES»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 16 - FH»; depende de la actividad económica registrada en el SIN).
+- **Tipo de documento 16 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila `16 - FACTURA DE HOTELES`: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, `6202000 - 16 - FH`; depende de la actividad económica registrada en el SIN).
 
     ![Captura](../img/parte-2/15-factura-de-hoteles-02.webp){ width="624" height="448" loading="lazy" }
 
@@ -24,11 +24,11 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 1. **Abrir una factura nueva:** Contabilidad → Clientes → Facturas → botón Nuevo, y elegir el cliente en el campo Contacto.
 
-1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **16 - FACTURA DE HOTELES**. Este documento admite pago con gift card: el monto de la gift card se resta del importe sujeto a IVA.
+1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, `16 - FACTURA DE HOTELES`. Este documento admite pago con gift card: el monto de la gift card se resta del importe sujeto a IVA.
 
     ![Captura](../img/parte-2/15-factura-de-hoteles-04.webp){ width="624" height="428" loading="lazy" }
 
-1. **Cargar las líneas** en la pestaña Líneas de factura: el producto (la noche de alojamiento), la cantidad de noches, el precio y, en la columna **Tipo de habitación**, el tipo según el catálogo del SIAT (por ejemplo 1 - HABITACIÓN SENCILLA, 2 - HABITACIÓN DOBLE o 10 - SUITE). Cada línea con tipo de habitación cuenta como una habitación.
+1. **Cargar las líneas** en la pestaña Líneas de factura: el producto (la noche de alojamiento), la cantidad de noches, el precio y, en la columna **Tipo de habitación**, el tipo según el catálogo del SIAT (por ejemplo `1 - HABITACIÓN SENCILLA, 2 - HABITACIÓN DOBLE` o `10 - SUITE`). Cada línea con tipo de habitación cuenta como una habitación.
 
 1. **Completar la pestaña Hotel (BO):** en el grupo Datos del Hospedaje, la **Fecha de ingreso** (obligatoria). En la tabla **Huéspedes**, una fila por persona con su nombre, documento de identificación, país y, si corresponde, la casilla Menor de edad. Las cantidades de huéspedes, mayores, menores y habitaciones se calculan solas.
 
@@ -38,7 +38,7 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
-1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
+1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI `VALIDADA`.
 
     ![Captura](../img/parte-2/15-factura-de-hoteles-06.webp){ width="624" height="428" loading="lazy" }
 
@@ -46,7 +46,7 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 La factura impresa lleva el título **FACTURA** con la leyenda (Con Derecho a Crédito Fiscal), y el mismo detalle que la de compra-venta. Al pie salen el subtotal, el descuento, el total, el monto gift card, el monto a pagar y el importe base de crédito fiscal. **La fecha de ingreso, los tipos de habitación y los huéspedes no se imprimen**: viajan solo en el XML que recibe el SIN.
 
-Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice **VALIDADA**. La factura de hoteles tiene su propia numeración por punto de venta (la secuencia 16), separada de la de compra-venta. Por ejemplo, una factura con 10 noches en habitación sencilla a 280 Bs, 9 en habitación doble a 420 Bs y 6 en suite a 750 Bs, con ingreso el 04/11/2026 y dos huéspedes mayores de edad. Suma 11.080,00 Bs; el SIN la recibió con 3 habitaciones, 2 huéspedes y monto sujeto a IVA 11.080 Bs.
+Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice `VALIDADA`. La factura de hoteles tiene su propia numeración por punto de venta (la secuencia 16), separada de la de compra-venta. Por ejemplo, una factura con 10 noches en habitación sencilla a 280 Bs, 9 en habitación doble a 420 Bs y 6 en suite a 750 Bs, con ingreso el 04/11/2026 y dos huéspedes mayores de edad. Suma 11.080,00 Bs; el SIN la recibió con 3 habitaciones, 2 huéspedes y monto sujeto a IVA 11.080 Bs.
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
@@ -58,7 +58,7 @@ Los errores de la sección [Factura de compra-venta › Errores frecuentes y có
 
 | Lo que ve el usuario | Por qué pasa | Cómo se resuelve |
 |---|---|---|
-| En Tipo Documento no aparece 16 - FACTURA DE HOTELES | Falta el módulo, el tipo 16 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
+| En Tipo Documento no aparece `16 - FACTURA DE HOTELES` | Falta el módulo, el tipo 16 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
 | «Nota: Debe registrar la Fecha de ingreso al hospedaje (obligatoria en la Factura de Hoteles).» | La pestaña Hotel (BO) quedó sin Fecha de ingreso. | Completar la Fecha de ingreso y volver a confirmar. |
 | «Nota: La cantidad de huéspedes debe ser igual a la suma de mayores y menores.» | Se modificaron a mano las cantidades del grupo Datos del Hospedaje. | Corregir las cantidades o volver a cargar los huéspedes en la tabla para que se calculen solas. |
 | «Nota: Todos los huéspedes deben tener nombre y documento de identificación.» | Una fila de la tabla Huéspedes no tiene nombre o documento. | Completar la fila o borrarla. |

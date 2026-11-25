@@ -21,7 +21,7 @@ Odoo registra el descuento global como una línea con un producto especial. Hay 
 
 !!! note "Nota"
 
-    Debe existir un solo producto marcado como descuento global: Odoo usa el primero que encuentra. Si no hay ninguno, al aplicar el descuento aparece «Si desea aplicar un descuento global, configure el item activando la casilla "Descuento global" en el producto».
+    Debe existir un solo producto marcado como descuento global: Odoo usa el primero que encuentra. Si no hay ninguno, al aplicar el descuento aparece `Si desea aplicar un descuento global, configure el item activando la casilla "Descuento global" en el producto`.
 
 ## 3.3 Aplicar el descuento en una factura
 

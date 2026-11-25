@@ -9,7 +9,7 @@ Respuestas cortas a las dudas más comunes. Haga clic en una pregunta para ver l
 
 ## Facturación del día a día
 
-??? question "Al confirmar aparece «CUFD inválido». ¿Qué hago?"
+??? question "Al confirmar aparece `CUFD inválido`. ¿Qué hago?"
 
     El CUFD del punto de venta venció (dura 24 horas) o **otro sistema pidió un CUFD nuevo** para el mismo punto de venta, y eso invalida el anterior. Abra el punto de venta, pulse **Solicitar CUFD** y vuelva a confirmar la factura, que quedó en borrador.
 
@@ -29,7 +29,7 @@ Respuestas cortas a las dudas más comunes. Haga clic en una pregunta para ver l
 
 ??? question "La pantalla se quedó cargando al confirmar. ¿Vuelvo a confirmar?"
 
-    Primero **recargue la factura**. El SIN pudo responder lento y la emisión haberse completado igual: si el **Estado EDI** dice **VALIDADA**, la factura ya está emitida y no hay que hacer nada más. Solo si sigue en borrador, vuelva a confirmar.
+    Primero **recargue la factura**. El SIN pudo responder lento y la emisión haberse completado igual: si el **Estado EDI** dice `VALIDADA`, la factura ya está emitida y no hay que hacer nada más. Solo si sigue en borrador, vuelva a confirmar.
 
 ??? question "En «Tipo Documento» no aparece el documento que necesito."
 
@@ -66,7 +66,7 @@ Respuestas cortas a las dudas más comunes. Haga clic en una pregunta para ver l
 
     Ver [Límite: solo una anulación y una reversión](parte-3/01-anulacion-y-reversion.md#15-limite-solo-una-anulacion-y-una-reversion).
 
-??? question "Al anular aparece «ERROR EN LA EJECUCIÓN DEL SERVICIO (RCV)»."
+??? question "Al anular aparece `ERROR EN LA EJECUCIÓN DEL SERVICIO (RCV)`."
 
     Es un error del servicio del SIN; la factura sigue válida. Vuelva a intentarlo más tarde. Si el error persiste, repórtelo al SIN o al soporte del sistema.
 
@@ -92,7 +92,7 @@ Respuestas cortas a las dudas más comunes. Haga clic en una pregunta para ver l
 
 ??? question "¿Puedo emitir notas de crédito o anular facturas mientras estoy fuera de línea?"
 
-    No. Las notas de crédito-débito y las anulaciones necesitan respuesta del SIN: Odoo responde «SERVICIO NO DISPONIBLE». Hágalas cuando el punto de venta vuelva a estar en línea.
+    No. Las notas de crédito-débito y las anulaciones necesitan respuesta del SIN: Odoo responde `SERVICIO NO DISPONIBLE`. Hágalas cuando el punto de venta vuelva a estar en línea.
 
 ??? question "¿Cuánto tiempo tengo para regularizar las facturas del evento?"
 

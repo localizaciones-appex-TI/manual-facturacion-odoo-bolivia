@@ -20,7 +20,7 @@ En la pestaña Puntos de venta de la sucursal, haga clic sobre el nombre del pun
 
 ![Captura](../img/parte-1/03-configuracion-de-puntos-de-venta-01.webp){ width="624" height="428" loading="lazy" }
 
-Los datos que se muestran son: Código (en el ejemplo, 0), Emisión (1 - EN LINEA), Tipo (5 - PUNTO DE VENTA CAJEROS), Dirección, Descripción, y el CUIS y el CUFD una vez que se solicitan.
+Los datos que se muestran son: Código (en el ejemplo, 0), Emisión (`1 - EN LINEA`), Tipo (`5 - PUNTO DE VENTA CAJEROS`), Dirección, Descripción, y el CUIS y el CUFD una vez que se solicitan.
 
 ## 3.3 Solicitar el CUIS y el CUFD
 
@@ -42,7 +42,7 @@ En la parte superior hay además tres botones: Crear Secuencia, Fuera de línea 
 
 ## 3.5 Pestañas inferiores
 
-La ventana tiene cuatro pestañas: Secuencias Documentos, Ajustes Adicionales, Mensajes y CUFD'S. La pestaña Secuencias Documentos indica, para cada tipo de documento (por ejemplo, 1 - FACTURA COMPRA-VENTA), su número de secuencia. La pestaña CUFD'S guarda los códigos CUFD solicitados.
+La ventana tiene cuatro pestañas: Secuencias Documentos, Ajustes Adicionales, Mensajes y CUFD'S. La pestaña Secuencias Documentos indica, para cada tipo de documento (por ejemplo, `1 - FACTURA COMPRA-VENTA`), su número de secuencia. La pestaña CUFD'S guarda los códigos CUFD solicitados.
 
 ## 3.6 Activar la facturación BO en el diario de ventas
 

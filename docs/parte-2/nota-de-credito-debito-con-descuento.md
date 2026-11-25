@@ -1,12 +1,12 @@
 # Nota de crédito-débito con descuento
 
-Es la nota de crédito-débito para devoluciones o rescisiones de una factura de compra-venta (tipo 1) que tuvo **Descuento Adicional**. En Odoo aparece como tipo de documento **47 - NOTA CREDITO DEBITO DESCUENTO**; ante el SIAT es el documento sector 47. Se emite igual que la nota de crédito-débito de la sección [Nota de crédito-débito](nota-de-credito-debito.md), pero el SIN exige que el descuento de la factura original se reparta entre lo devuelto: la nota informa el **monto total original**, el **descuento adicional** de la factura, el **monto total devuelto**, el **monto de descuento crédito-débito** (la parte del descuento que corresponde a lo devuelto) y el **monto efectivo crédito-débito** (el 13 % de lo devuelto). El detalle lleva dos bloques: las líneas de la factura original y las líneas devueltas. Si la factura de origen no tiene descuento adicional, corresponde la nota del tipo 24, no esta. Queda emitida cuando el SIN la devuelve como **VALIDADA (código 908)**.
+Es la nota de crédito-débito para devoluciones o rescisiones de una factura de compra-venta (tipo 1) que tuvo **Descuento Adicional**. En Odoo aparece como tipo de documento `47 - NOTA CREDITO DEBITO DESCUENTO`; ante el SIAT es el documento sector 47. Se emite igual que la nota de crédito-débito de la sección [Nota de crédito-débito](nota-de-credito-debito.md), pero el SIN exige que el descuento de la factura original se reparta entre lo devuelto: la nota informa el **monto total original**, el **descuento adicional** de la factura, el **monto total devuelto**, el **monto de descuento crédito-débito** (la parte del descuento que corresponde a lo devuelto) y el **monto efectivo crédito-débito** (el 13 % de lo devuelto). El detalle lleva dos bloques: las líneas de la factura original y las líneas devueltas. Si la factura de origen no tiene descuento adicional, corresponde la nota del tipo 24, no esta. Queda emitida cuando el SIN la devuelve como **`VALIDADA` (código `908`)**.
 
 ## Qué debe estar configurado
 
 No necesita un módulo aparte: viene con la facturación boliviana. Además de la configuración general de la Parte I, necesita estos tres puntos:
 
-- **Tipos de documento 1 y 47 activos y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento: «1 - FACTURA COMPRA-VENTA» con Documento Sector «6202000 - 1 - FCV», y «47 - NOTA CREDITO DEBITO DESCUENTO» con Documento Sector «6202000 - 47 - NCDDE» y Tipo de factura «3 - DOCUMENTO DE AJUSTE». Los dos con el interruptor Activo encendido.
+- **Tipos de documento 1 y 47 activos y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento: `1 - FACTURA COMPRA-VENTA` con Documento Sector `6202000 - 1 - FCV`, y `47 - NOTA CREDITO DEBITO DESCUENTO` con Documento Sector `6202000 - 47 - NCDDE` y Tipo de factura `3 - DOCUMENTO DE AJUSTE`. Los dos con el interruptor Activo encendido.
 
     ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-01.webp){ width="624" height="448" loading="lazy" }
 
@@ -18,17 +18,17 @@ No necesita un módulo aparte: viene con la facturación boliviana. Además de l
 
 ## Paso a paso: emitir la factura de origen y la nota
 
-1. **Emitir la factura de compra-venta con descuento adicional:** se crea como en la sección [Factura de compra-venta](factura-de-compra-venta.md) y, además de los productos, se agrega una línea con el producto «Descuento adicional», cantidad 1 y **precio negativo** (por ejemplo, −853,10). Al confirmarla debe quedar VALIDADA.
+1. **Emitir la factura de compra-venta con descuento adicional:** se crea como en la sección [Factura de compra-venta](factura-de-compra-venta.md) y, además de los productos, se agrega una línea con el producto «Descuento adicional», cantidad 1 y **precio negativo** (por ejemplo, −853,10). Al confirmarla debe quedar `VALIDADA`.
 
     ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Abrir la factura de origen** ya validada, pulsar **Nota de crédito** y elegir **Revertir**, como en las secciones [Nota de crédito-débito › Abrir la factura original](nota-de-credito-debito.md#abrir-la-factura-original) y [Nota de crédito-débito › Crear la nota de crédito](nota-de-credito-debito.md#crear-la-nota-de-credito). Odoo crea la nota en borrador con las mismas líneas.
 
-1. **Elegir el tipo de documento:** en Tipo Documento de la nota, **47 - NOTA CREDITO DEBITO DESCUENTO**.
+1. **Elegir el tipo de documento:** en Tipo Documento de la nota, `47 - NOTA CREDITO DEBITO DESCUENTO`.
 
 1. **Dejar solo lo que se devuelve:** para una devolución total, se dejan todas las líneas; para una parcial, se bajan las cantidades o se quitan líneas. No se agregan productos que no estén en la factura de origen. La línea del descuento adicional no hace falta tocarla: Odoo reparte el descuento entre lo devuelto.
 
-1. **Revisar la pestaña Factura (BO)** y **pulsar Confirmar.** La nota debe quedar en Registrado, con Estado EDI **VALIDADA**.
+1. **Revisar la pestaña Factura (BO)** y **pulsar Confirmar.** La nota debe quedar en Registrado, con Estado EDI `VALIDADA`.
 
     ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-04.webp){ width="624" height="428" loading="lazy" }
 
@@ -36,7 +36,7 @@ No necesita un módulo aparte: viene con la facturación boliviana. Además de l
 
 La nota impresa lleva el título **NOTA CRÉDITO - DÉBITO** y dos tablas: **DATOS FACTURA ORIGINAL**, con las líneas de la factura, el monto total original y el descuento adicional, y **DATOS DE LA DEVOLUCIÓN O RESCISIÓN**, con las líneas devueltas, el monto total devuelto, el monto descuento débito-crédito, el monto total a pagar y el monto efectivo débito-crédito. También muestra el número y el código de autorización (CUF) de la factura original.
 
-Igual que la nota de la sección [Nota de crédito-débito](nota-de-credito-debito.md), está emitida solo si **Estado EDI** dice **VALIDADA**. Tiene su propia numeración por punto de venta (la secuencia 47). Por ejemplo, si una factura sumaba 7.150 con un descuento adicional de 853,10 (se pagaron 6.296,90), una devolución parcial puede salir con monto total devuelto 5.636,39, monto de descuento crédito-débito 763,61 y monto efectivo crédito-débito 732,73.
+Igual que la nota de la sección [Nota de crédito-débito](nota-de-credito-debito.md), está emitida solo si **Estado EDI** dice `VALIDADA`. Tiene su propia numeración por punto de venta (la secuencia 47). Por ejemplo, si una factura sumaba 7.150 con un descuento adicional de 853,10 (se pagaron 6.296,90), una devolución parcial puede salir con monto total devuelto 5.636,39, monto de descuento crédito-débito 763,61 y monto efectivo crédito-débito 732,73.
 
 Se anula y se revierte igual que la nota de crédito-débito (sección [Nota de crédito-débito](nota-de-credito-debito.md)). Como las demás notas, no se emite fuera de línea: el sistema no permite documentos de ajuste en modo fuera de línea.
 

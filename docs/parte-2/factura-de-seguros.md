@@ -1,6 +1,6 @@
 # Factura de seguros
 
-Es la factura de las primas de seguros cerrados: automotor, salud, vida y otros. En Odoo aparece como tipo de documento **34 - FACTURA DE SEGUROS**; ante el SIAT es el documento sector 34. Su particularidad es el **ajuste de afectación del IVA**: cuando una parte de la prima la paga otra persona (la aseguradora o el asegurado), esa parte se informa aparte y **se resta del importe sujeto a IVA**. Queda emitida cuando el SIN la devuelve como **VALIDADA (código 908)**.
+Es la factura de las primas de seguros cerrados: automotor, salud, vida y otros. En Odoo aparece como tipo de documento `34 - FACTURA DE SEGUROS`; ante el SIAT es el documento sector 34. Su particularidad es el **ajuste de afectación del IVA**: cuando una parte de la prima la paga otra persona (la aseguradora o el asegurado), esa parte se informa aparte y **se resta del importe sujeto a IVA**. Queda emitida cuando el SIN la devuelve como **`VALIDADA` (código `908`)**.
 
 ## Qué debe estar configurado
 
@@ -10,7 +10,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
     ![Captura](../img/parte-2/20-factura-de-seguros-01.webp){ width="624" height="428" loading="lazy" }
 
-- **Tipo de documento 34 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «34 - FACTURA DE SEGUROS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «620000 - 34 - FAC\_SEG»; lo trae la sincronización con el SIN y depende de la actividad económica registrada).
+- **Tipo de documento 34 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila `34 - FACTURA DE SEGUROS`: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, `620000 - 34 - FAC_SEG`; lo trae la sincronización con el SIN y depende de la actividad económica registrada).
 
     ![Captura](../img/parte-2/20-factura-de-seguros-02.webp){ width="624" height="448" loading="lazy" }
 
@@ -26,7 +26,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 1. **Abrir una factura nueva:** Contabilidad → Clientes → Facturas → botón Nuevo, y elegir el cliente en el campo Contacto.
 
-1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **34 - FACTURA DE SEGUROS**. Este documento admite pago con gift card y descuento adicional.
+1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, `34 - FACTURA DE SEGUROS`. Este documento admite pago con gift card y descuento adicional.
 
     ![Captura](../img/parte-2/20-factura-de-seguros-04.webp){ width="624" height="428" loading="lazy" }
 
@@ -36,7 +36,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
-1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
+1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI `VALIDADA`.
 
     ![Captura](../img/parte-2/20-factura-de-seguros-05.webp){ width="624" height="428" loading="lazy" }
 
@@ -44,7 +44,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 La factura impresa lleva el título **FACTURA** con la leyenda (Con Derecho a Crédito Fiscal) y la aclaración (Factura Seguros Cerrados). El detalle muestra solo las primas. Al pie salen SUBTOTAL Bs, DESCUENTO Bs, TOTAL Bs, **AJUSTE IVA**, MONTO GIFT CARD Bs, MONTO A PAGAR Bs, el total en la moneda de la factura y el **IMPORTE BASE CRÉDITO FISCAL** (el total menos el ajuste y la gift card).
 
-Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice **VALIDADA**. La factura de seguros tiene su propia numeración por punto de venta (la secuencia 34), separada de la de compra-venta. Por ejemplo, una factura con 3 primas de seguro automotor a 450 Bs, 2 de vida a 280 Bs y 3 de salud a 620 Bs, más un ajuste de 1.181,64 Bs que paga la otra parte. Suma 3.770,00 Bs; el SIN la recibió con ajuste de afectación del IVA 1.181,64 Bs y monto sujeto a IVA 2.588,36 Bs.
+Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice `VALIDADA`. La factura de seguros tiene su propia numeración por punto de venta (la secuencia 34), separada de la de compra-venta. Por ejemplo, una factura con 3 primas de seguro automotor a 450 Bs, 2 de vida a 280 Bs y 3 de salud a 620 Bs, más un ajuste de 1.181,64 Bs que paga la otra parte. Suma 3.770,00 Bs; el SIN la recibió con ajuste de afectación del IVA 1.181,64 Bs y monto sujeto a IVA 2.588,36 Bs.
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
@@ -56,7 +56,7 @@ Los errores de la sección [Factura de compra-venta › Errores frecuentes y có
 
 | Lo que ve el usuario | Por qué pasa | Cómo se resuelve |
 |---|---|---|
-| En Tipo Documento no aparece 34 - FACTURA DE SEGUROS | Falta el módulo, el tipo 34 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
+| En Tipo Documento no aparece `34 - FACTURA DE SEGUROS` | Falta el módulo, el tipo 34 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
 | «Nota: La línea de ajuste \[...\] debe ser negativa: es la parte que paga la otra parte.» | La línea con el producto de ajuste tiene precio positivo. | Poner el precio en negativo (por ejemplo, −500). |
 | «Nota: El ajuste IVA más la GiftCard no puede superar el monto total de la factura.» | El ajuste y la gift card juntos superan el total de las primas. | Revisar el monto del ajuste o de la gift card. |
 | «Nota: La factura de seguros debe tener al menos una línea de servicio.» | La factura solo tiene la línea de ajuste. | Agregar al menos una prima. |

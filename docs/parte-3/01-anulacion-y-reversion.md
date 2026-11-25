@@ -12,7 +12,7 @@ Abra la factura validada y pulse el botón Anular. Se abre el asistente Cancelar
 
 ![Captura](../img/parte-3/01-anulacion-y-reversion-01.webp){ width="624" height="428" loading="lazy" }
 
-Una vez confirmada la anulación, la factura pasa al estado Cancelado y el campo Estado EDI cambia a ANULACION CONFIRMADA. En este estado el único botón disponible es Revertir.
+Una vez confirmada la anulación, la factura pasa al estado Cancelado y el campo Estado EDI cambia a `ANULACION CONFIRMADA`. En este estado el único botón disponible es Revertir.
 
 ![Captura](../img/parte-3/01-anulacion-y-reversion-02.webp){ width="624" height="428" loading="lazy" }
 
@@ -22,7 +22,7 @@ Puede comprobar en cualquier momento el estado real de la factura ante Impuestos
 
 ![Captura](../img/parte-3/01-anulacion-y-reversion-03.webp){ width="624" height="428" loading="lazy" }
 
-Al abrir el enlace, el SIAT muestra la página Verificación de factura electrónica con el CUF, el monto, los datos del emisor y del cliente, y el estado de la factura. Si la anulación se registró correctamente, el estado es ANULADA.
+Al abrir el enlace, el SIAT muestra la página Verificación de factura electrónica con el CUF, el monto, los datos del emisor y del cliente, y el estado de la factura. Si la anulación se registró correctamente, el estado es `ANULADA`.
 
 ![Captura](../img/parte-3/01-anulacion-y-reversion-04.webp){ width="624" height="458" loading="lazy" }
 
@@ -34,7 +34,7 @@ Si anuló la factura por error, pulse el botón Revertir. El sistema muestra un 
 
 ![Captura](../img/parte-3/01-anulacion-y-reversion-05.webp){ width="624" height="428" loading="lazy" }
 
-Al terminar, el Estado EDI pasa a REVERSION DE ANULACION CONFIRMADA y la factura vuelve al estado Registrado, es decir, otra vez como documento válido. Puede comprobarlo en el SIAT con el enlace de la pestaña Factura (BO).
+Al terminar, el Estado EDI pasa a `REVERSION DE ANULACION CONFIRMADA` y la factura vuelve al estado Registrado, es decir, otra vez como documento válido. Puede comprobarlo en el SIAT con el enlace de la pestaña Factura (BO).
 
 ## 1.5 Límite: solo una anulación y una reversión
 

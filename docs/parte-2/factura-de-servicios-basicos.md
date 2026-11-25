@@ -1,6 +1,6 @@
 # Factura de servicios básicos
 
-Es la factura que emiten las empresas de servicios básicos (energía eléctrica, agua potable, gas domiciliario y similares) por el consumo de un periodo. En Odoo aparece como tipo de documento **13 - FACTURA DE SERVICIOS BÁSICOS**; ante el SIAT es el documento sector 13 y da derecho a crédito fiscal. Lo que la distingue es que informa el **mes y la gestión facturados** y el **número de medidor**, y que las tasas (aseo, alumbrado público y otras), los ajustes y otros pagos no van en el detalle sino en la cabecera de la factura. Queda emitida cuando el SIN la devuelve como **VALIDADA (código 908)**.
+Es la factura que emiten las empresas de servicios básicos (energía eléctrica, agua potable, gas domiciliario y similares) por el consumo de un periodo. En Odoo aparece como tipo de documento `13 - FACTURA DE SERVICIOS BÁSICOS`; ante el SIAT es el documento sector 13 y da derecho a crédito fiscal. Lo que la distingue es que informa el **mes y la gestión facturados** y el **número de medidor**, y que las tasas (aseo, alumbrado público y otras), los ajustes y otros pagos no van en el detalle sino en la cabecera de la factura. Queda emitida cuando el SIN la devuelve como **`VALIDADA` (código `908`)**.
 
 ## Qué debe estar configurado
 
@@ -10,7 +10,7 @@ Además de la configuración general de la Parte I, la factura de servicios bás
 
     ![Captura](../img/parte-2/30-factura-de-servicios-basicos-01.webp){ width="624" height="428" loading="lazy" }
 
-- **Tipo de documento 13 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «13 - FACTURA DE SERVICIOS BÁSICOS»: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, «6202000 - 13 - FSB»; depende de la actividad económica registrada en el SIN) y el Tipo de factura en «1 - FACTURA CON DERECHO A CREDITO FISCAL».
+- **Tipo de documento 13 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila `13 - FACTURA DE SERVICIOS BÁSICOS`: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, `6202000 - 13 - FSB`; depende de la actividad económica registrada en el SIN) y el Tipo de factura en `1 - FACTURA CON DERECHO A CREDITO FISCAL`.
 
     ![Captura](../img/parte-2/30-factura-de-servicios-basicos-02.webp){ width="624" height="428" loading="lazy" }
 
@@ -50,7 +50,7 @@ Al elegir el tipo de documento 13, la factura muestra la pestaña Servicios Bás
 
 1. **Abrir una factura nueva:** Contabilidad → Clientes → Facturas → botón Nuevo, y elegir el cliente en el campo Contacto.
 
-1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago (sin gift card) y, en Tipo Documento, **13 - FACTURA DE SERVICIOS BÁSICOS**.
+1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago (sin gift card) y, en Tipo Documento, `13 - FACTURA DE SERVICIOS BÁSICOS`.
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: primero los servicios, con su cantidad y precio; después, si corresponde, las tasas y los ajustes con sus productos. Un ajuste no sujeto a IVA (devolución) se carga con precio negativo.
 
@@ -58,7 +58,7 @@ Al elegir el tipo de documento 13, la factura muestra la pestaña Servicios Bás
 
 1. **Completar la pestaña Servicios Básicos (BO):** Mes facturado, Gestión facturada y Nro. de medidor; y, si se conocen, el consumo y la dirección del suministro (sección [La pestaña Servicios Básicos (BO)](#la-pestana-servicios-basicos-bo)).
 
-1. **Revisar la pestaña Factura (BO)** (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7) y **pulsar Confirmar.** Debe quedar en Registrado, con Estado EDI **VALIDADA**.
+1. **Revisar la pestaña Factura (BO)** (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7) y **pulsar Confirmar.** Debe quedar en Registrado, con Estado EDI `VALIDADA`.
 
     ![Captura](../img/parte-2/30-factura-de-servicios-basicos-07.webp){ width="624" height="428" loading="lazy" }
 
@@ -70,7 +70,7 @@ Por ejemplo, una factura de noviembre de 2026 con 4 m³ de agua potable a 4,60 B
 
 ![Captura](../img/parte-2/30-factura-de-servicios-basicos-08.webp){ width="624" height="458" loading="lazy" }
 
-Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice **VALIDADA**. Tiene su propia numeración por punto de venta (la secuencia 13). Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
+Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice `VALIDADA`. Tiene su propia numeración por punto de venta (la secuencia 13). Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
 ## Errores frecuentes
 
@@ -78,10 +78,10 @@ Los errores de la sección [Factura de compra-venta › Errores frecuentes y có
 
 | Lo que ve el usuario | Por qué pasa | Cómo se resuelve |
 |---|---|---|
-| En Tipo Documento no aparece 13 - FACTURA DE SERVICIOS BÁSICOS | Falta el módulo, el tipo 13 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
+| En Tipo Documento no aparece `13 - FACTURA DE SERVICIOS BÁSICOS` | Falta el módulo, el tipo 13 no está activo o el punto de venta no tiene la secuencia. | Revisar los puntos de la sección [Qué debe estar configurado](#que-debe-estar-configurado). |
 | «Nota: Debe registrar el número de medidor para la Factura de Servicios Básicos.» | La pestaña Servicios Básicos (BO) quedó sin medidor. | Completar el Nro. de medidor y volver a confirmar. |
 | «Nota: Debe seleccionar el mes facturado.» o «La gestión facturada debe estar entre 2015 y 9999.» | Falta el mes o el año del periodo es inválido. | Completar el Mes facturado y la Gestión facturada. |
 | «Nota: La Factura de Servicios Básicos debe tener al menos una línea de servicio (producto sin concepto de Servicios Básicos).» | Todas las líneas son tasas o ajustes. | Agregar al menos una línea con un producto de servicio sin concepto. |
 | «Nota: \[producto\] es un ajuste no sujeto a IVA (devolución): registre la línea con precio negativo.» | El ajuste no sujeto a IVA se cargó con precio positivo. | Cambiar el precio de esa línea a negativo. |
 | «Nota: El beneficiario de la Ley 1886 debe contener sólo dígitos (máximo 14).» | El campo tiene letras, espacios o más de 14 dígitos. | Escribir solo el número. |
-| «Nota: El pago con GiftCard no es válido para el documento: \[...\]» | En Tigo Pago se eligió un método con gift card. | Elegir otro Tigo Pago, por ejemplo 1 - EFECTIVO. |
+| «Nota: El pago con GiftCard no es válido para el documento: \[...\]» | En Tigo Pago se eligió un método con gift card. | Elegir otro Tigo Pago, por ejemplo `1 - EFECTIVO`. |
