@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura de moneda extranj
 
 - **Módulo de moneda extranjera activado.** Aplicaciones → buscar «Moneda Extranjera» → «(9) Facturacion Compra Venta Moneda Extranjera» → Activar.
 
-    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 9 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «9 - FACTURA DE COMPRA Y VENTA DE MONEDA EXTRANJERA»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 9 - FCVME»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 9. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Moneda homologada y producto de la moneda.** La moneda que se compra o vende debe tener su Moneda SIAT (Contabilidad → Configuración → Monedas); las que no la tienen no aparecen en la lista. Por ejemplo, USD figura como 2 - DOLAR. Además hace falta un producto por cada moneda: un servicio, sin impuestos, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I), por ejemplo «Dólares estadounidenses (USD)». Su precio no importa, porque la factura lo reemplaza por el tipo de cambio de la operación.
 
@@ -36,7 +36,7 @@ En las líneas, la **cantidad** es el monto de moneda extranjera y el **precio u
 
 Con los dos tipos de cambio Odoo calcula el **ingreso por diferencia de cambio**: en una venta es el tipo de cambio de la operación menos el oficial, y en una compra, el oficial menos el de la operación. En cada factura se usan los tipos de cambio del día.
 
-![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-04.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -52,7 +52,7 @@ Con los dos tipos de cambio Odoo calcula el **ingreso por diferencia de cambio**
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -62,7 +62,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/11-factura-de-compra-y-venta-de-moneda-extranjera-06.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

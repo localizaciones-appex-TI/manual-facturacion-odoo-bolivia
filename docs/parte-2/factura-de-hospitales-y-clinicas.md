@@ -8,21 +8,21 @@ Además de la configuración general de la Parte I, la factura de hospitales nec
 
 - **Módulo de hospitales activado.** Aplicaciones → buscar «Clinicas» → «(17) Facturacion Clinicas/Hospitales.» → Activar.
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 17 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «17 - FACTURA DE HOSPITALES/CLÍNICAS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 17 - FHC»; depende de la actividad económica registrada en el SIN).
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 17. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Médicos cargados como contactos, con un NIT válido.** Contabilidad → Clientes → Clientes → Nuevo: nombre del médico, Tipo de Identificación y NIT/CI real de cada médico. El SIN verifica que ese NIT exista en su padrón: con un número inventado rechaza la factura (sección [Errores frecuentes](#errores-frecuentes)).
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Servicios con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I).
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Los datos del médico en cada línea
 
@@ -40,7 +40,7 @@ El módulo agrega cinco campos a las líneas de la factura. **Vienen ocultos**: 
 
 Conviene completar Médico, Especialidad, Especialidad del doctor y Nro. Quirófano/Sala en todas las líneas.
 
-![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -48,17 +48,17 @@ Conviene completar Médico, Especialidad, Especialidad del doctor y Nro. Quiróf
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **17 - FACTURA DE HOSPITALES/CLÍNICAS**.
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-06.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: el servicio, la cantidad y el precio, y en cada línea los datos del médico (sección [Los datos del médico en cada línea](#los-datos-del-medico-en-cada-linea)).
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-07.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-07.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-08.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-08.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -66,7 +66,7 @@ La factura impresa tiene el mismo encabezado que la de compra-venta (sección [F
 
 Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber si la factura llegó al SIN](factura-de-compra-venta.md#como-saber-si-la-factura-llego-al-sin)), la factura está emitida solo si **Estado EDI** dice **VALIDADA**. La factura de hospitales tiene su propia numeración por punto de venta (la secuencia 17), separada de la de compra-venta. Por ejemplo, una factura con 2 ecografías abdominales a 350 Bs con la Dra. Ana Gutiérrez Vaca (sala 2) y 1 radiografía de tórax a 180 Bs con el Dr. Luis Fernández Paz (sala 7), y suma 880,00 Bs.
 
-![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-09.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/06-factura-de-hospitales-y-clinicas-09.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

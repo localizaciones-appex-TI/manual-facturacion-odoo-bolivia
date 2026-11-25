@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 - **Módulo de hoteles activado.** Aplicaciones → buscar «Hoteles» → «(16) Facturación Hoteles» → Activar.
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 16 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «16 - FACTURA DE HOTELES»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 16 - FH»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 16. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT y una unidad de medida válida.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). El SIAT solo acepta en este sector unidades de medida con código hasta 69. Se crea un producto por cada tipo de habitación, por noche de alojamiento.
 
@@ -26,13 +26,13 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **16 - FACTURA DE HOTELES**. Este documento admite pago con gift card: el monto de la gift card se resta del importe sujeto a IVA.
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: el producto (la noche de alojamiento), la cantidad de noches, el precio y, en la columna **Tipo de habitación**, el tipo según el catálogo del SIAT (por ejemplo 1 - HABITACIÓN SENCILLA, 2 - HABITACIÓN DOBLE o 10 - SUITE). Cada línea con tipo de habitación cuenta como una habitación.
 
 1. **Completar la pestaña Hotel (BO):** en el grupo Datos del Hospedaje, la **Fecha de ingreso** (obligatoria). En la tabla **Huéspedes**, una fila por persona con su nombre, documento de identificación, país y, si corresponde, la casilla Menor de edad. Las cantidades de huéspedes, mayores, menores y habitaciones se calculan solas.
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-05.webp){ width="624" height="428" loading="lazy" }
 
 1. **Asignar los huéspedes a su habitación (opcional):** la columna Línea / Habitación indica en qué línea se informa cada huésped. Si se deja vacía, el huésped se informa en la primera línea con tipo de habitación. Para elegir la línea, primero hay que guardar la factura.
 
@@ -40,7 +40,7 @@ Además de la configuración general de la Parte I, la factura de hoteles necesi
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/15-factura-de-hoteles-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/15-factura-de-hoteles-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -50,7 +50,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/15-factura-de-hoteles-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/15-factura-de-hoteles-07.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

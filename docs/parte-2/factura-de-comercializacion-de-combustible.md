@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la factura de comercializaci
 
 - **Módulo activado.** Aplicaciones → buscar «Combustible» → «(55) Facturación Comercialización de Combustible» → Activar. Si no aparece, primero hay que pulsar Actualizar lista de aplicaciones (sección [Factura de suministro de energía › Qué debe estar configurado](factura-de-suministro-de-energia.md#que-debe-estar-configurado)).
 
-    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 55 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «55 - FACTURA COMERCIALIZACIÓN DE COMBUSTIBLE»: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, «6202000 - 55 - FCCOMB»; depende de la actividad económica registrada en el SIN) y el Tipo de factura en «1 - FACTURA CON DERECHO A CREDITO FISCAL».
 
-    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 55. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -30,11 +30,11 @@ Si se va a informar el país del cliente, el país de Odoo tiene que tener carga
 
 1. **Completar la pestaña Combustible (BO),** grupo Datos de la Venta de Combustible: la **Placa/B-Sisa/Vin** (obligatoria, hasta 12 caracteres) y, si corresponde, el Tipo de envase (por ejemplo «Bidón»), el País del cliente (se propone desde el cliente), la Autorización Sustancias Controladas y la Observación (por ejemplo «Uso de tickets»).
 
-    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO)** (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7) y **pulsar Confirmar.** Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -44,7 +44,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/29-factura-de-comercializacion-de-combustible-05.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

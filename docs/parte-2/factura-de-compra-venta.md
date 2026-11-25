@@ -26,19 +26,19 @@ Antes de la primera factura, confirme que estos nueve puntos estén listos. Si f
 
 *Puntos 3 y 4 de la tabla. Punto de venta: datos, CUIS y CUFD.*
 
-![Captura](../img/parte-2/01-factura-de-compra-venta-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/01-factura-de-compra-venta-01.webp){ width="624" height="428" loading="lazy" }
 
 *Punto 5 de la tabla. Secuencias del punto de venta.*
 
-![Captura](../img/parte-2/01-factura-de-compra-venta-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/01-factura-de-compra-venta-02.webp){ width="624" height="428" loading="lazy" }
 
 *Punto 8 de la tabla. Cliente: tipo de identificación y NIT/CI.*
 
-![Captura](../img/parte-2/01-factura-de-compra-venta-03.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/01-factura-de-compra-venta-03.webp){ width="624" height="428" loading="lazy" }
 
 *Punto 9 de la tabla. Producto: Código SIAT y Código Nandina en la pestaña Facturación (BO).*
 
-![Captura](../img/parte-2/01-factura-de-compra-venta-04.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/01-factura-de-compra-venta-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -62,13 +62,13 @@ La factura se arma en borrador y se emite al presionar **Confirmar**. Solo en es
 
     - **Tipo Emisión:** se completa solo según el punto de venta (1 - EN LÍNEA).
 
-        ![Captura](../img/parte-2/01-factura-de-compra-venta-05.webp){ width="624" loading="lazy" }
+        ![Captura](../img/parte-2/01-factura-de-compra-venta-05.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar las fechas.** **Fecha de la factura** suele ser hoy. **Fecha y hora (BO)** queda vacía: se llena sola al emitir, con la hora exacta registrada en el SIN.
 
 1. **Cargar las líneas** en la pestaña **Líneas de factura** con **Agregar una línea**: Producto, Cantidad, Precio e Impuestos. La descripción se toma del producto y puede editarse. El descuento se carga en la columna de descuento de la línea.
 
-    ![Captura](../img/parte-2/01-factura-de-compra-venta-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/01-factura-de-compra-venta-06.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO)** antes de confirmar:
 
@@ -80,13 +80,13 @@ La factura se arma en borrador y se emite al presionar **Confirmar**. Solo en es
 
     - **Forzar Envio:** dejar desmarcado. Solo se marca cuando el NIT es inválido y aun así se quiere que el SIN registre la factura.
 
-        ![Captura](../img/parte-2/01-factura-de-compra-venta-07.webp){ width="624" loading="lazy" }
+        ![Captura](../img/parte-2/01-factura-de-compra-venta-07.webp){ width="624" height="428" loading="lazy" }
 
 1. **Presionar Confirmar.** Odoo envía la factura al SIN y espera la respuesta; suele tardar unos segundos, y hasta un minuto si el SIN está lento. **No presione el botón dos veces ni cierre la pantalla.**
 
 1. **Verificar el resultado.** La factura pasa a **Registrado** y toma su número (por ejemplo INV/2026/00003). En la cabecera, **Estado EDI** debe decir **VALIDADA**. En la pestaña Factura (BO) aparecen **Nro. Factura**, **CUF** y **URL SIAT**, y a la derecha se ve la representación gráfica con el código QR.
 
-    ![Captura](../img/parte-2/01-factura-de-compra-venta-08.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/01-factura-de-compra-venta-08.webp){ width="624" height="428" loading="lazy" }
 
 1. **Entregar la factura al cliente** con el botón **Enviar** (PDF por correo) o descargando el PDF.
 
@@ -98,7 +98,7 @@ La factura se arma en borrador y se emite al presionar **Confirmar**. Solo en es
 
 Cuando la configuración está completa, la factura de compra-venta se imprime con los datos que se cargaron en las secciones anteriores. Esta es una factura de ejemplo emitida en entorno de prueba, desde la Sucursal 1, punto de venta 0.
 
-![Captura](../img/parte-2/01-factura-de-compra-venta-09.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/01-factura-de-compra-venta-09.webp){ width="624" height="458" loading="lazy" }
 
 **Encabezado.** A la izquierda salen el logo y el nombre de la empresa, la sucursal, el número de punto de venta, la dirección, el teléfono y la ciudad: son los datos de las secciones 1 a 3 de la Parte I. A la derecha salen el NIT de la empresa, el número de factura y el código de autorización.
 

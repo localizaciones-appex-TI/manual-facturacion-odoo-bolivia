@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura de suministro de 
 
 - **Módulo de suministro de energía activado.** Aplicaciones → buscar «Suministro» → «(31) Facturacion Suministro de Energía» → Activar. Si el módulo no aparece aunque esté en el código, primero hay que pulsar Actualizar lista de aplicaciones (en el menú de Aplicaciones, con el modo desarrollador activo).
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 31 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «31 - FACTURA DE SUMINISTRO»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 31 - FSE»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 31. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). El precio por kWh admite hasta 4 decimales (por ejemplo, 0,9875 Bs).
 
@@ -26,19 +26,19 @@ Además de la configuración general de la Parte I, la factura de suministro de 
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **31 - FACTURA DE SUMINISTRO**. Este documento admite pago con gift card y descuento adicional.
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: la recarga, la cantidad de kWh y el precio por kWh (hasta 4 decimales).
 
 1. **Completar la pestaña Suministro de Energía (BO),** grupo Datos de la Recarga: la **Placa del vehículo** (obligatoria, hasta 12 caracteres; Odoo la pasa a mayúsculas) y, si se quiere, el País del cliente (se propone desde el cliente).
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-05.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/19-factura-de-suministro-de-energia-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -48,7 +48,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/19-factura-de-suministro-de-energia-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/19-factura-de-suministro-de-energia-07.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

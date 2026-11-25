@@ -10,21 +10,21 @@ Las dos opciones sirven para corregir una venta, pero se usan en situaciones dis
 
 Abra la factura validada y pulse el botón Anular. Se abre el asistente Cancelar factura, donde debe elegir la razón de la anulación en el campo Razón de venta. Si el motivo que necesita no aparece en la lista, use Buscar más… para ver todas las razones disponibles. Luego pulse Anular para confirmar, o Cancelar para salir sin hacer cambios.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-01.webp){ width="624" height="428" loading="lazy" }
 
 Una vez confirmada la anulación, la factura pasa al estado Cancelado y el campo Estado EDI cambia a ANULACION CONFIRMADA. En este estado el único botón disponible es Revertir.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-02.webp){ width="624" height="428" loading="lazy" }
 
 ## 1.3 Verificar el estado en el SIAT
 
 Puede comprobar en cualquier momento el estado real de la factura ante Impuestos Nacionales. Abra la pestaña Factura (BO) de la factura. Allí encontrará la leyenda, el número de factura, el Cuf y un enlace (url) que lleva a la página de consulta del SIAT. En el entorno de prueba, el enlace apunta al portal piloto.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-03.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-03.webp){ width="624" height="428" loading="lazy" }
 
 Al abrir el enlace, el SIAT muestra la página Verificación de factura electrónica con el CUF, el monto, los datos del emisor y del cliente, y el estado de la factura. Si la anulación se registró correctamente, el estado es ANULADA.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-04.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-04.webp){ width="624" height="458" loading="lazy" }
 
 En la misma pestaña, el campo Observaciones (BO) muestra los mensajes que devolvió el SIAT. Por ejemplo, el código 2.005 indica que se envió un NIT de cliente inválido junto con un código de excepción. Si es su caso, revise también la opción Forzar envío.
 
@@ -32,7 +32,7 @@ En la misma pestaña, el campo Observaciones (BO) muestra los mensajes que devol
 
 Si anuló la factura por error, pulse el botón Revertir. El sistema muestra un mensaje de confirmación que explica que la factura vuelve a ser un documento válido y que la anulación solo puede revertirse una sola vez. Pulse De acuerdo para continuar.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-05.webp){ width="624" height="428" loading="lazy" }
 
 Al terminar, el Estado EDI pasa a REVERSION DE ANULACION CONFIRMADA y la factura vuelve al estado Registrado, es decir, otra vez como documento válido. Puede comprobarlo en el SIAT con el enlace de la pestaña Factura (BO).
 
@@ -42,4 +42,4 @@ Al terminar, el Estado EDI pasa a REVERSION DE ANULACION CONFIRMADA y la factura
 
     Una factura se puede anular una vez y esa anulación se puede revertir una sola vez. Después de revertirla, si intenta anularla de nuevo, el sistema muestra el error Operación no válida: REVERSIÓN DE ANULACIÓN NO DISPONIBLE PARA LA FACTURA O NOTA DE CREDITO - DEBITO. Por eso, antes de anular, asegúrese de que realmente es lo que necesita. Si luego hay que corregir la venta, use una nota de crédito.
 
-![Captura](../img/parte-3/01-anulacion-y-reversion-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/01-anulacion-y-reversion-06.webp){ width="624" height="428" loading="lazy" }

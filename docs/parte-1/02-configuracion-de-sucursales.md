@@ -6,7 +6,7 @@ Una sucursal es cada local registrado de la empresa ante Impuestos Nacionales. C
 
 Entre al menú Facturación (BO), en la barra superior, y pulse el botón Sucursales. Se muestra la lista con el nombre y el código de cada sucursal. Puede activar tantas sucursales como necesite (1, 2 … n), cada una con su propio código.
 
-![Captura](../img/parte-1/02-configuracion-de-sucursales-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/02-configuracion-de-sucursales-01.webp){ width="624" height="428" loading="lazy" }
 
 En el ejemplo solo está la CASA MATRIZ (código 0); cada sucursal nueva aparece como una fila más, con su propio código. La Casa Matriz y su punto de venta 0 ya vienen creados por defecto: no hay que crearlos, solo solicitar su CUIS y su CUFD (ver sección 3).
 
@@ -14,7 +14,7 @@ En el ejemplo solo está la CASA MATRIZ (código 0); cada sucursal nueva aparece
 
 Abra una sucursal haciendo clic en su nombre. En la parte de arriba hay cuatro botones y, debajo, los datos generales.
 
-![Captura](../img/parte-1/02-configuracion-de-sucursales-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/02-configuracion-de-sucursales-02.webp){ width="624" height="428" loading="lazy" }
 
 Los datos generales son Compañía, Código y la ubicación de la sucursal: Dirección, Departamento, Provincia y Municipio. La dirección y la ubicación son obligatorias, así que complételas todas. En la captura, la dirección de la Casa Matriz está vacía y debe llenarse.
 
@@ -36,7 +36,7 @@ Los cuatro botones de arriba son:
 
 Más abajo, la pestaña Puntos de venta lista los puntos de venta de la sucursal con su estado.
 
-![Captura](../img/parte-1/02-configuracion-de-sucursales-03.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/02-configuracion-de-sucursales-03.webp){ width="624" height="428" loading="lazy" }
 
 Las columnas son Nombre, En línea, CUIS activo, CUFD activo y Tipo; al final de cada fila hay accesos directos a Cufd y anulaciones manuales. Un interruptor verde significa que la condición está activa. En el ejemplo, el Punto de venta 0 tiene los tres activos; el Punto de venta 1 tiene CUIS pero le falta el CUFD; y los demás aún no tienen ninguno.
 

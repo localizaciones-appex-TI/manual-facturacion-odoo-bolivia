@@ -10,7 +10,7 @@ La nota viene en el mismo módulo que la factura ICE. Además de la configuraci�
 
 - **Tipos de documento 14 y 48 activos y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento: «48 - NOTA CREDITO DEBITO ICE» con Documento Sector «6202000 - 48 - NCDICE» y Tipo de factura «3 - DOCUMENTO DE AJUSTE», con el interruptor Activo encendido. El 14 se configura como en la sección [Factura de productos alcanzados por el ICE › Qué debe estar configurado](factura-de-productos-alcanzados-por-el-ice.md#que-debe-estar-configurado).
 
-    ![Captura](../img/parte-2/28-nota-de-credito-debito-ice-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/28-nota-de-credito-debito-ice-01.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencias en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) deben figurar los tipos 14 y 48. Si falta alguno, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -28,7 +28,7 @@ Las tasas ICE de la Nandina de cada producto deben estar cargadas desde antes de
 
 1. **Revisar la pestaña Factura (BO)** y **pulsar Confirmar.** La nota debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/28-nota-de-credito-debito-ice-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/28-nota-de-credito-debito-ice-02.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la nota impresa y cómo saber si llegó al SIN
 
@@ -38,7 +38,7 @@ Igual que la nota de la sección [Nota de crédito-débito](nota-de-credito-debi
 
 Se anula y se revierte igual que la nota de crédito-débito (sección [Nota de crédito-débito](nota-de-credito-debito.md)). Como las demás notas, no se emite fuera de línea: el sistema no permite documentos de ajuste en modo fuera de línea.
 
-![Captura](../img/parte-2/28-nota-de-credito-debito-ice-03.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/28-nota-de-credito-debito-ice-03.webp){ width="624" height="550" loading="lazy" }
 
 ## Errores frecuentes
 

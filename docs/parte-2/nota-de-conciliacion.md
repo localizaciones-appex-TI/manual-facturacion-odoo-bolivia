@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la nota de conciliación nec
 
 - **Módulo de nota de conciliación activado.** Aplicaciones → buscar «Conciliación» → «(29) Nota de Conciliación» → Activar.
 
-    ![Captura](../img/parte-2/18-nota-de-conciliacion-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/18-nota-de-conciliacion-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 29 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «29 - NOTA DE CONCILIACION»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 29 - NCO»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/18-nota-de-conciliacion-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/18-nota-de-conciliacion-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 29. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -26,7 +26,7 @@ No hacen falta productos nuevos: la nota usa los de la factura original.
 
 1. **Cambiar el tipo de documento:** en la nota, en Tipo Documento, elegir **29 - NOTA DE CONCILIACION**. Aparecen en las líneas las columnas **Monto original** (el subtotal de esa línea en la factura) y **Monto final**.
 
-    ![Captura](../img/parte-2/18-nota-de-conciliacion-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/18-nota-de-conciliacion-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar el Monto final de cada línea:** lo que correspondía cobrar. Al cargarlo, Odoo deja la línea con cantidad 1 y precio igual a la diferencia (monto original − monto final). El monto final tiene que ser menor que el original: el sistema solo emite la nota por crédito fiscal, cuando se cobró de más. Una línea sin diferencia se quita de la nota.
 
@@ -34,7 +34,7 @@ No hacen falta productos nuevos: la nota usa los de la factura original.
 
 1. **Pulsar Confirmar.** Odoo envía la nota al SIN; debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/18-nota-de-conciliacion-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/18-nota-de-conciliacion-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la nota impresa y cómo saber si llegó al SIN
 
@@ -44,7 +44,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las facturas (sección 1 de la Parte III), pero el motivo de anulación es el de notas: **2 - NOTA DE CREDITO-DEBITO MAL EMITIDA**. En cambio, **no se puede emitir fuera de línea**: el módulo bloquea los documentos de ajuste mientras el punto de venta está fuera de línea y responde «SERVICIO NO DISPONIBLE».
 
-![Captura](../img/parte-2/18-nota-de-conciliacion-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/18-nota-de-conciliacion-05.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

@@ -22,7 +22,7 @@ La nota de crédito-débito es el documento con el que se corrige una factura ya
 
 Entre a Contabilidad → Clientes → Facturas y abra la factura sobre la que se hace la devolución. Debe estar en estado Registrado y con Estado EDI VALIDADA.
 
-![Captura](../img/parte-2/02-nota-de-credito-debito-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/02-nota-de-credito-debito-01.webp){ width="624" height="428" loading="lazy" }
 
 En la ficha se ven los datos de facturación de esa venta: Cliente, Sucursal, Punto de Venta, Tipo Documento (1 - FACTURA COMPRA-VENTA) y Tigo Pago (la etiqueta tiene un error de escritura del módulo; significa «Tipo de pago»). El campo Estado EDI indica el estado de la factura ante el SIAT; en el ejemplo dice VALIDADA. Si la factura se anula con el botón Anular, este campo pasa a ANULACION CONFIRMADA (se explica en la sección 1 de la Parte III). Abajo, la pestaña Líneas de factura muestra los productos, y la pestaña Factura (BO) guarda los datos del SIAT. A la derecha se ve la vista previa de la factura impresa.
 
@@ -30,7 +30,7 @@ En la ficha se ven los datos de facturación de esa venta: Cliente, Sucursal, Pu
 
 Pulse **Nota de crédito**. Se abre una ventana para registrar la devolución.
 
-![Captura](../img/parte-2/02-nota-de-credito-debito-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/02-nota-de-credito-debito-02.webp){ width="624" height="428" loading="lazy" }
 
 Complete tres datos:
 
@@ -60,7 +60,7 @@ Al pulsar Revertir, Odoo abre la nota de crédito del cliente en estado **Borrad
 
 1. **Pulsar Confirmar.** Odoo envía la nota al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. La nota pasa a Registrado, toma su número (por ejemplo RINV/2026/00001) y **Estado EDI** debe decir **VALIDADA**.
 
-    ![Captura](../img/parte-2/02-nota-de-credito-debito-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/02-nota-de-credito-debito-03.webp){ width="624" height="428" loading="lazy" }
 
 **Numeración.** La nota tiene su propia numeración por punto de venta (la secuencia 24), separada de la de las facturas. Por eso una nota puede salir con el Nro. Factura 1 aunque su factura de origen tenga otro número.
 

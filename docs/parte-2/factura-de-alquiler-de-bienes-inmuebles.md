@@ -8,19 +8,19 @@ Además de la configuración general de la Parte I, la factura de alquiler neces
 
 - **Módulo de alquiler activado.** Aplicaciones → buscar «Alquiler» → «(2) Facturacion Alquiler de Bienes Inmuebles» → Activar.
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 2 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «2 - FACTURA DE ALQUILER DE BIENES INMUEBLES»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 2 - FAIB»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 2. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Servicios de alquiler con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). Se crea un servicio por cada tipo de inmueble que se alquila (por ejemplo, alquiler mensual de oficina, de local comercial, de depósito o de parqueo); al SIN salen con la unidad de medida 58 - UNIDAD (SERVICIOS) (sección 5.1 de la Parte I).
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-04.webp){ width="624" height="428" loading="lazy" }
 
 ## El periodo facturado
 
@@ -34,7 +34,7 @@ Al elegir el tipo de documento 2, la cabecera de la factura muestra el campo **P
 
 **Por ahora, el periodo que llega al SIN es siempre el mes de la emisión.** Al confirmar, Odoo vuelve a calcular el campo con la fecha de emisión, aunque se haya escrito otro periodo a mano. Por ejemplo, si en noviembre se factura el alquiler de octubre y se escribe «Octubre 2026», la factura sale con «Noviembre 2026». Si hace falta facturar otro periodo, avisar al equipo técnico: es un comportamiento del módulo.
 
-![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -44,7 +44,7 @@ Al elegir el tipo de documento 2, la cabecera de la factura muestra el campo **P
 
 1. **Revisar el Periodo Facturado:** debe decir el periodo que se cobra (sección [El periodo facturado](#el-periodo-facturado)).
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-06.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: el servicio de alquiler, la cantidad y el precio.
 
@@ -52,7 +52,7 @@ Al elegir el tipo de documento 2, la cabecera de la factura muestra el campo **P
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-07.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-07.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -62,7 +62,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-08.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/07-factura-de-alquiler-de-bienes-inmuebles-08.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

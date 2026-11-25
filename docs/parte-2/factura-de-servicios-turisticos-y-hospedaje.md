@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura turística necesi
 
 - **Módulo de turismo y hospedaje activado.** Aplicaciones → buscar «Turísticos» → «(6) Facturacion Servicios Turísticos y Hospedaje» → Activar.
 
-    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 6 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «6 - FACTURA DE SERVICIO TURÍSTICO Y HOSPEDAJE»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 6 - FSTH»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 6. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Servicios con Código SIAT y unidad de medida válida.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). La unidad de medida homologada debe tener un código de 69 o menos (sección 5.1 de la Parte I). Se crea un servicio por cada tipo de hospedaje o tour que se vende (por ejemplo, habitación sencilla, doble o suite por noche).
 
@@ -32,7 +32,7 @@ Al elegir el tipo de documento 6, la factura muestra la pestaña **Turismo y Hos
 
 - **Tabla de huéspedes:** nombre, documento de identificación, país, si es menor de edad y, opcionalmente, la línea (habitación) en la que se informa. El país debe tener su País (SIAT) (sección 5.2 de la Parte I). Los huéspedes sin línea se informan en la primera línea que tenga tipo de habitación; para asignarlos a otra, primero se guarda la factura y después se elige la línea.
 
-    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-04.webp){ width="624" height="428" loading="lazy" }
 
 ## El tipo de habitación en cada línea
 
@@ -40,7 +40,7 @@ Con el tipo de documento 6, las líneas de la factura muestran la columna **Tipo
 
 Una línea sin tipo de habitación también es válida, por ejemplo un tour. La cantidad de habitaciones de la pestaña es la cantidad de líneas que tienen tipo de habitación.
 
-![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -56,7 +56,7 @@ Una línea sin tipo de habitación también es válida, por ejemplo un tour. La 
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -66,7 +66,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/10-factura-de-servicios-turisticos-y-hospedaje-07.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

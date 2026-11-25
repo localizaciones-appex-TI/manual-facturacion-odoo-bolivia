@@ -8,19 +8,19 @@ Además de la configuración general de la Parte I, la factura de lubricantes ne
 
 - **Módulo de lubricantes activado.** Aplicaciones → buscar «Lubricantes» → «(44) Facturacion Importación y Comercialización de Lubricantes» → Activar.
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 44 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «44 - FACTURA IMPORTACION COMERCIALIZACION LUBRICANTES»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 44 - FICL»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 44. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT, litros y alícuota IEHD.** Deben ser productos, no servicios. En la pestaña Facturación (BO) del producto, además del Código SIAT, el grupo Lubricantes (sector 44) tiene dos campos: **Litros por unidad** (por ejemplo, 20 para un bidón de 20 L) y **Alícuota IEHD.**
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-04.webp){ width="624" height="428" loading="lazy" }
 
 ## La pestaña Datos de Lubricantes (BO)
 
@@ -36,7 +36,7 @@ Al elegir el tipo de documento 44, la factura muestra la pestaña **Datos de Lub
 
 Estos datos se pueden cambiar mientras la factura está en borrador; al confirmarla quedan fijos.
 
-![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Litros y deducción del IEHD
 
@@ -50,7 +50,7 @@ Las dos se pueden corregir a mano en la línea. Con ellas Odoo calcula la **dedu
 
 La alícuota IEHD la fija el SIN. En cada producto debe cargarse el valor vigente.
 
-![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -62,13 +62,13 @@ La alícuota IEHD la fija el SIN. En cada producto debe cargarse el valor vigent
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: los productos, la cantidad y el precio. Revisar las columnas Litros y Alícuota IEHD (sección [Litros y deducción del IEHD](#litros-y-deduccion-del-iehd)).
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-07.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-07.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-08.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-08.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -78,7 +78,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-09.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/08-factura-de-importacion-y-comercializacion-de-lubri-09.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

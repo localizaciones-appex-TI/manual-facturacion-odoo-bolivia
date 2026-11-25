@@ -24,7 +24,7 @@ Además de esos datos, su usuario necesita el permiso del módulo. Sin él no se
 
 Entre a Ajustes → Usuarios y empresas → Empresas. Se muestra la lista de empresas de la base de datos; haga clic sobre el nombre de su empresa para abrir su ficha.
 
-![Captura](../img/parte-1/01-configuracion-de-la-empresa-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/01-configuracion-de-la-empresa-01.webp){ width="624" height="428" loading="lazy" }
 
 En la columna Sucursales de la lista aparecen las sucursales ya creadas. Más adelante, en la sección 2, se explica cómo verlas y administrarlas desde el menú Facturación (BO).
 
@@ -32,7 +32,7 @@ En la columna Sucursales de la lista aparecen las sucursales ya creadas. Más ad
 
 La ficha tiene tres pestañas: Información general, Sucursales y Facturación (BO). Se abre en la primera.
 
-![Captura](../img/parte-1/01-configuracion-de-la-empresa-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/01-configuracion-de-la-empresa-02.webp){ width="624" height="428" loading="lazy" }
 
 Escriba el nombre y los datos legales tal como figuran en Impuestos Nacionales: Nombre de la empresa, Dirección, País (Bolivia) y Moneda (BOB, boliviano). Los datos de contacto (Teléfono, Móvil y Correo electrónico) son los que saldrán como referencia de la empresa.
 
@@ -44,7 +44,7 @@ Por último, active el interruptor Habilitar la facturación (BO), abajo a la de
 
 Abra la pestaña Facturación (BO). Aquí se le dice a Odoo cómo conectarse con el SIAT.
 
-![Captura](../img/parte-1/01-configuracion-de-la-empresa-03.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/01-configuracion-de-la-empresa-03.webp){ width="624" height="428" loading="lazy" }
 
 **Tipo de entorno.** Elija «Pruebas y Piloto» mientras esté configurando y verificando. Las facturas emitidas en entorno de prueba llevan de fondo, como marca de agua, la leyenda "sin valor legal". Cuando todo esté verificado, cambie el entorno a producción; a partir de ese momento las facturas ya son legales y la leyenda deja de aparecer. No pase a producción hasta haber emitido, anulado y revisado facturas de prueba.
 

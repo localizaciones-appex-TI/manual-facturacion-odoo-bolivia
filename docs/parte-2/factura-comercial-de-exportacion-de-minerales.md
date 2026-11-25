@@ -12,25 +12,25 @@ Además de la configuración general de la Parte I, la factura de exportación d
 
 - **Módulo activado.** Aplicaciones → buscar «Minerales» → «(20) Facturación Comercial de Exportación de Minerales» → Activar.
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 20 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «20 - FACTURA COMERCIAL DE EXPORTACIÓN DE MINERALES»: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, «6202000 - 20 - FEM»; depende de la actividad económica registrada en el SIN) y el Tipo de factura en «2 - FACTURA SIN DERECHO A CREDITO FISCAL».
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 20. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-03.webp){ width="624" height="428" loading="lazy" }
 
 - **RUEX y NIM de la empresa.** Ajustes → Usuarios y empresas → Empresas → abrir la empresa → pestaña Facturación (BO): el **RUEX** (Registro Único de Exportadores) y el **NIM** (Número de Identificación Minera) se informan al SIN en cada factura.
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-04.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos minerales con Código SIAT y Código Nandina.** Cada concentrado es un producto con su Código SIAT y su Código Nandina en la pestaña Facturación (BO); por ejemplo, 2608 para el concentrado de zinc, 2616 para el de plata y 2607 para el de plomo.
 
 - **Producto para los gastos de realización.** Un producto de tipo servicio con la casilla **Gasto de realización (BO)** marcada, en la pestaña Facturación (BO). Se usa para restar las penalidades, los fletes y los seguros.
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-05.webp){ width="624" height="428" loading="lazy" }
 
 - **País destino homologado.** El país al que se exporta debe tener cargado su País (SIAT) (sección 5.2 de la Parte I).
 
@@ -44,7 +44,7 @@ Al elegir el tipo de documento 20, la factura muestra la pestaña Exportación d
 
 - **Otros datos (JSON):** datos adicionales que pida el SIN, en formato JSON. Es opcional.
 
-    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Las líneas de la factura
 
@@ -52,7 +52,7 @@ Con el tipo de documento 20, las líneas muestran cuatro columnas más, junto al
 
 Los gastos de realización van como una línea más, con el producto marcado como Gasto de realización (BO) y **precio negativo**: no salen en el detalle y su importe se informa aparte.
 
-![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/31-factura-comercial-de-exportacion-de-minerales-07.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 

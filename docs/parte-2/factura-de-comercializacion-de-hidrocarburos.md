@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura de hidrocarburos 
 
 - **Módulo de hidrocarburos activado.** Aplicaciones → buscar «Hidrocarburos» → «(12) Facturacion Comercialización de Hidrocarburos» → Activar.
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 12 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «12 - FACTURA DE COMERCIALIZACIÓN DE HIDROCARBUROS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 12 - FCH»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 12. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). Se crea un producto por cada combustible y unidad que se vende (por ejemplo, gasolina especial por litro o gas natural vehicular por metro cúbico).
 
@@ -26,19 +26,19 @@ Además de la configuración general de la Parte I, la factura de hidrocarburos 
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **12 - FACTURA DE COMERCIALIZACIÓN DE HIDROCARBUROS**. Este documento **no admite pago con gift card**.
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: el combustible, la cantidad (en litros o metros cúbicos; admite hasta 5 decimales) y el precio.
 
 1. **Completar la pestaña Hidrocarburos (BO),** grupo Datos de la Venta de Combustible: **Placa del vehículo** (obligatoria, hasta 12 caracteres; Odoo la pasa a mayúsculas), Tipo de envase (opcional, por ejemplo «Tanque del vehículo» o «Bidón»), País del cliente (se completa desde el cliente), Autorización Sustancias Controladas (solo si corresponde) y Observación. La pestaña recuerda que el importe base para crédito fiscal es el 70 % del total.
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-05.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -48,7 +48,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/13-factura-de-comercializacion-de-hidrocarburos-07.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

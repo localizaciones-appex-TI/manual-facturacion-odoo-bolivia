@@ -8,19 +8,19 @@ No necesita un módulo aparte: viene con la facturación boliviana. Además de l
 
 - **Tipos de documento 1 y 47 activos y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento: «1 - FACTURA COMPRA-VENTA» con Documento Sector «6202000 - 1 - FCV», y «47 - NOTA CREDITO DEBITO DESCUENTO» con Documento Sector «6202000 - 47 - NCDDE» y Tipo de factura «3 - DOCUMENTO DE AJUSTE». Los dos con el interruptor Activo encendido.
 
-    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-01.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencias en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) deben figurar los tipos 1 y 47. Si falta alguno, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
 - **Producto de descuento adicional.** Un producto de tipo servicio con la casilla **Es descuento Global** marcada (pestaña Facturación (BO) del producto), sin impuestos y con Código SIAT (por ejemplo, «Descuento adicional»). Es el que se usa en la factura de origen para cargar el descuento.
 
-    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-02.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: emitir la factura de origen y la nota
 
 1. **Emitir la factura de compra-venta con descuento adicional:** se crea como en la sección [Factura de compra-venta](factura-de-compra-venta.md) y, además de los productos, se agrega una línea con el producto «Descuento adicional», cantidad 1 y **precio negativo** (por ejemplo, −853,10). Al confirmarla debe quedar VALIDADA.
 
-    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Abrir la factura de origen** ya validada, pulsar **Nota de crédito** y elegir **Revertir**, como en las secciones [Nota de crédito-débito › Abrir la factura original](nota-de-credito-debito.md#abrir-la-factura-original) y [Nota de crédito-débito › Crear la nota de crédito](nota-de-credito-debito.md#crear-la-nota-de-credito). Odoo crea la nota en borrador con las mismas líneas.
 
@@ -30,7 +30,7 @@ No necesita un módulo aparte: viene con la facturación boliviana. Además de l
 
 1. **Revisar la pestaña Factura (BO)** y **pulsar Confirmar.** La nota debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la nota impresa y cómo saber si llegó al SIN
 
@@ -40,7 +40,7 @@ Igual que la nota de la sección [Nota de crédito-débito](nota-de-credito-debi
 
 Se anula y se revierte igual que la nota de crédito-débito (sección [Nota de crédito-débito](nota-de-credito-debito.md)). Como las demás notas, no se emite fuera de línea: el sistema no permite documentos de ajuste en modo fuera de línea.
 
-![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/27-nota-de-credito-debito-con-descuento-05.webp){ width="624" height="591" loading="lazy" }
 
 ## Errores frecuentes
 

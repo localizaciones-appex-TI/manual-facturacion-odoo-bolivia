@@ -89,7 +89,7 @@ El botón Fuera de línea está entre los botones del punto de venta y hace exac
 
 El registro de los eventos se consulta en Facturación (BO), opción Eventos significativos. La lista muestra el nombre del evento, el punto de venta, el tipo de evento elegido, la fecha de inicio, la fecha de finalización, el CUFD con el que se abrió y el estado.
 
-![Captura](../img/parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo-01.webp){ width="624" height="428" loading="lazy" }
 
 Las fechas de inicio y finalización se registran automáticamente: no hay que escribirlas. La fecha de inicio queda al poner el punto de venta fuera de línea y la de finalización al volver a ponerlo en línea.
 

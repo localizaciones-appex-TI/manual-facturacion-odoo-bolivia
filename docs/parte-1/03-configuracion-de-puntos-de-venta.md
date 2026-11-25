@@ -18,7 +18,7 @@ Además de estos dos, cada factura lleva su propio CUF (Código Único de Factur
 
 En la pestaña Puntos de venta de la sucursal, haga clic sobre el nombre del punto de venta. Se abre una ventana con sus datos y sus botones.
 
-![Captura](../img/parte-1/03-configuracion-de-puntos-de-venta-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/03-configuracion-de-puntos-de-venta-01.webp){ width="624" height="428" loading="lazy" }
 
 Los datos que se muestran son: Código (en el ejemplo, 0), Emisión (1 - EN LINEA), Tipo (5 - PUNTO DE VENTA CAJEROS), Dirección, Descripción, y el CUIS y el CUFD una vez que se solicitan.
 
@@ -50,7 +50,7 @@ Con las sucursales y los puntos de venta ya configurados, falta habilitar la fac
 
 **Interruptor Factura (BO) en el diario.** Entre a Contabilidad → Configuración → Diarios, abra el diario Ventas, vaya a la pestaña Ajustes avanzados y, en la sección Facturación (BO), active el interruptor Factura (BO).
 
-![Captura](../img/parte-1/03-configuracion-de-puntos-de-venta-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/03-configuracion-de-puntos-de-venta-02.webp){ width="624" height="428" loading="lazy" }
 
 !!! warning "Importante"
 

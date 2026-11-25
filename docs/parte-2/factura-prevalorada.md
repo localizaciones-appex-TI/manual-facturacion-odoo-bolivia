@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura prevalorada neces
 
 - **Módulo prevalorada activado.** Aplicaciones → buscar «Prevalorada» → «(23) Facturación Prevalorada» → Activar.
 
-    ![Captura](../img/parte-2/16-factura-prevalorada-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/16-factura-prevalorada-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 23 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «23 - FACTURA PREVALORADA»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 23 - FPV»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/16-factura-prevalorada-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/16-factura-prevalorada-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 23. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/16-factura-prevalorada-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/16-factura-prevalorada-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I). Se crea un producto por cada valor prevalorado que se vende (por ejemplo, una tasa o una entrada de precio fijo).
 
@@ -26,7 +26,7 @@ Además de la configuración general de la Parte I, la factura prevalorada neces
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **23 - FACTURA PREVALORADA**. Este documento **no admite pago con gift card** ni descuento adicional.
 
-    ![Captura](../img/parte-2/16-factura-prevalorada-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/16-factura-prevalorada-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar una sola línea** en la pestaña Líneas de factura: la tasa o entrada, la cantidad y el precio. Admite descuento en la línea.
 
@@ -34,7 +34,7 @@ Además de la configuración general de la Parte I, la factura prevalorada neces
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/16-factura-prevalorada-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/16-factura-prevalorada-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -44,7 +44,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III). Lo que no admite es la emisión con CAFC (facturas manuales de contingencia), porque el formato del SIAT para este documento no la contempla.
 
-![Captura](../img/parte-2/16-factura-prevalorada-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/16-factura-prevalorada-06.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 - **Módulo de seguros activado.** Aplicaciones → buscar «Seguros» → «(34) Facturacion Seguros» → Activar. Si no aparece, primero hay que pulsar Actualizar lista de aplicaciones (sección [Factura de suministro de energía › Qué debe estar configurado](factura-de-suministro-de-energia.md#que-debe-estar-configurado)).
 
-    ![Captura](../img/parte-2/20-factura-de-seguros-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/20-factura-de-seguros-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 34 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «34 - FACTURA DE SEGUROS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «620000 - 34 - FAC\_SEG»; lo trae la sincronización con el SIN y depende de la actividad económica registrada).
 
-    ![Captura](../img/parte-2/20-factura-de-seguros-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/20-factura-de-seguros-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 34. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -20,7 +20,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 - **Un producto de ajuste.** En la ficha del producto, pestaña Facturación (BO), grupo Seguros (sector 34), se activa la casilla **Ajuste IVA (seguros)**. Por ejemplo, «Ajuste IVA: parte pagada por la otra parte», con precio 0.
 
-    ![Captura](../img/parte-2/20-factura-de-seguros-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/20-factura-de-seguros-03.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -28,7 +28,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **34 - FACTURA DE SEGUROS**. Este documento admite pago con gift card y descuento adicional.
 
-    ![Captura](../img/parte-2/20-factura-de-seguros-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/20-factura-de-seguros-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las primas** en la pestaña Líneas de factura: el seguro, la cantidad y el precio.
 
@@ -38,7 +38,7 @@ Además de la configuración general de la Parte I, la factura de seguros necesi
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/20-factura-de-seguros-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/20-factura-de-seguros-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -48,7 +48,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/20-factura-de-seguros-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/20-factura-de-seguros-06.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

@@ -8,7 +8,7 @@ Los catálogos están en el menú Facturación (BO), en el grupo Catálogos SIAT
 
 La actividad económica identifica a qué se dedica su empresa. Está asociada al NIT y se registra con su código.
 
-![Captura](../img/parte-1/04-catalogos-del-siat-actividades-y-productos-01.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/04-catalogos-del-siat-actividades-y-productos-01.webp){ width="624" height="428" loading="lazy" }
 
 La lista muestra tres datos: el código CAEB (Clasificador de Actividades Económicas de Bolivia), el tipo de actividad (la letra P o S) y la descripción. En el ejemplo hay cuatro actividades, como 6201000 – Actividades de programación informática y 620000 – Consultores en proyectos de informática y suministro de programas de informática.
 
@@ -16,6 +16,6 @@ La lista muestra tres datos: el código CAEB (Clasificador de Actividades Econó
 
 Cada producto o servicio que factura debe corresponder a un código de producto del SIAT, y ese código depende de la actividad.
 
-![Captura](../img/parte-1/04-catalogos-del-siat-actividades-y-productos-02.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-1/04-catalogos-del-siat-actividades-y-productos-02.webp){ width="624" height="428" loading="lazy" }
 
 La tabla tiene cuatro columnas: Código de actividad, Código de producto, Descripción y Códigos nandina. Un mismo producto puede aparecer bajo más de una actividad: por ejemplo, el código 83.131 – Servicios de consultoría en TI está con la actividad 620000 y también con la 001250. La columna Códigos nandina solo trae valores en algunos productos, como el 47.811 (paquete de sistemas operativos).

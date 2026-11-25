@@ -8,21 +8,21 @@ Además de la configuración general de la Parte I, la factura ICE necesita esto
 
 - **Módulo ICE activado.** Aplicaciones → buscar «ICE» → «(14) Facturacion Productos Alcanzados por el ICE» → Activar.
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 14 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 14 - FICE»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en cada punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar 14 - FACTURA PRODUCTOS ALCANZADOS POR EL ICE. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Tasas ICE en los Códigos Nandina.** Ajustes → Facturación (BO) → Catálogos SIAT → Productos y/o Servicios → Códigos Nandina: cada Nandina usada por productos ICE debe tener cargados el ICE Específico, el ICE Porcentual y el Factor (sección [Cómo se calcula el ICE](#como-se-calcula-el-ice)).
 
 - **Productos con Código SIAT y Código Nandina.** En la pestaña Facturación (BO) del producto. El ICE de cada línea se calcula con las tasas de esa Nandina.
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se calcula el ICE
 
@@ -44,7 +44,7 @@ Con esos datos, ICE específico = litros × alícuota específica, e ICE porcent
 
 - **Sin tasas no hay ICE.** Si la Nandina tiene las tasas en cero, la factura se emite igual, pero el SIN recibe las líneas como no alcanzadas por el ICE.
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -54,13 +54,13 @@ Con esos datos, ICE específico = litros × alícuota específica, e ICE porcent
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: productos con su Nandina, cantidad y precio. El precio se carga sin ICE; el ICE se agrega al enviar la factura al SIN.
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-06.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-07.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/04-factura-de-productos-alcanzados-por-el-ice-07.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo saber si llegó al SIN
 

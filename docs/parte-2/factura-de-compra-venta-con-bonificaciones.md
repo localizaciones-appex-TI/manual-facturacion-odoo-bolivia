@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la factura de compra-venta c
 
 - **Módulo activado.** Aplicaciones → buscar «Bonificaciones» → «(35) Facturacion Compra Venta Bonificaciones» → Activar. Si no aparece, primero hay que pulsar Actualizar lista de aplicaciones (sección [Factura de suministro de energía › Qué debe estar configurado](factura-de-suministro-de-energia.md#que-debe-estar-configurado)). El módulo tiene que estar en una versión que envíe este documento por el servicio de compra-venta (ServicioFacturacionCompraVenta).
 
-    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 35 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «35 - FACTURA COMPRA VENTA BONIFICACIONES»: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, «620000 - 35 - FAC\_CVB»; lo trae la sincronización con el SIN y depende de la actividad económica registrada) y el Tipo de factura en «1 - FACTURA CON DERECHO A CREDITO FISCAL».
 
-    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 35. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -24,7 +24,7 @@ Además de la configuración general de la Parte I, la factura de compra-venta c
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **35 - FACTURA COMPRA VENTA BONIFICACIONES**. Admite pago con gift card y descuento adicional.
 
-    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar los productos vendidos** en la pestaña Líneas de factura: el producto, la cantidad y el precio.
 
@@ -34,7 +34,7 @@ Además de la configuración general de la Parte I, la factura de compra-venta c
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -44,7 +44,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/22-factura-de-compra-venta-con-bonificaciones-05.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

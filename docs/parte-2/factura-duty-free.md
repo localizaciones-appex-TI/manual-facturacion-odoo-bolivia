@@ -8,15 +8,15 @@ Además de la configuración general de la Parte I, la factura duty free necesit
 
 - **Módulo duty free activado.** Aplicaciones → buscar «Duty Free» → «(10) Facturacion Duty Free» → Activar.
 
-    ![Captura](../img/parte-2/12-factura-duty-free-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/12-factura-duty-free-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 10 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «10 - FACTURA DUTTY FREE»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 10 - FDF»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/12-factura-duty-free-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/12-factura-duty-free-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 10. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/12-factura-duty-free-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/12-factura-duty-free-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código SIAT.** En la pestaña Facturación (BO) del producto, con el Código SIAT del catálogo que corresponda a la actividad de la empresa (sección 4.2 de la Parte I).
 
@@ -32,7 +32,7 @@ Además de la configuración general de la Parte I, la factura duty free necesit
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/12-factura-duty-free-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/12-factura-duty-free-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -42,7 +42,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/12-factura-duty-free-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/12-factura-duty-free-05.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

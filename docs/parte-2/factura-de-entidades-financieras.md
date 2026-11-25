@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la factura de entidades fina
 
 - **Módulo de entidades financieras activado.** Aplicaciones → buscar «Entidades Financieras» → «(15) Facturacion Entidades Financieras» → Activar. Odoo envía esta factura por el servicio del SIN propio de las entidades financieras (ServicioFacturacionEntidadFinanciera), no por el de facturación electrónica general; el módulo debe estar en una versión que ya lo incluya.
 
-    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 15 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «15 - FACTURA DE ENTIDADES FINANCIERAS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 15 - FEF»; depende de la actividad económica registrada en el SIN).
 
-    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 15. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -20,7 +20,7 @@ Además de la configuración general de la Parte I, la factura de entidades fina
 
 - **Productos de arrendamiento financiero marcados.** En la ficha del producto, pestaña Facturación (BO), se activa la casilla **Arrendamiento financiero (BO) en los productos que son cuotas de arrendamiento financiero**.
 
-    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-03.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -28,7 +28,7 @@ Además de la configuración general de la Parte I, la factura de entidades fina
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **15 - FACTURA DE ENTIDADES FINANCIERAS**. Este documento **no admite pago con gift card**.
 
-    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: los servicios, con su cantidad y precio, y, si corresponde, la cuota de arrendamiento financiero como una línea más. La factura debe tener **al menos un servicio que no sea de arrendamiento**: el SIAT exige al menos una línea en el detalle.
 
@@ -36,7 +36,7 @@ Además de la configuración general de la Parte I, la factura de entidades fina
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/14-factura-de-entidades-financieras-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -46,7 +46,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/14-factura-de-entidades-financieras-06.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/14-factura-de-entidades-financieras-06.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

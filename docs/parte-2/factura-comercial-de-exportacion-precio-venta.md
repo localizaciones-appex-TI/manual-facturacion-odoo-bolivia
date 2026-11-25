@@ -8,11 +8,11 @@ Además de la configuración general de la Parte I, la factura comercial de expo
 
 - **Módulo activado.** Aplicaciones → buscar «Precio Venta» → «(45) Facturacion Comercial de Exportacion Precio Venta» → Activar. Instala también el módulo de exportación comercial si falta. Si no aparece, primero hay que pulsar Actualizar lista de aplicaciones (sección [Factura de suministro de energía › Qué debe estar configurado](factura-de-suministro-de-energia.md#que-debe-estar-configurado)).
 
-    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 45 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «45 - FACTURA COMERCIAL DE EXPORTACION PRECIO VENTA»: el interruptor Activo debe estar encendido, el campo Documento Sector completo (por ejemplo, «6202000 - 45 - FCEXPV»; depende de la actividad económica registrada en el SIN) y el Tipo de factura en «2 - FACTURA SIN DERECHO A CREDITO FISCAL».
 
-    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 45. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
@@ -32,11 +32,11 @@ Además de la configuración general de la Parte I, la factura comercial de expo
 
 1. **Cargar el desglose de costos** en la tabla Costos y gastos incluidos en el precio de venta: una línea por concepto, con Tipo (Nacional o Internacional), concepto y monto. La suma de los costos no puede superar el total del detalle. Opcionalmente, completar Descripción Paquetes - Bultos e Información Adicional.
 
-    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-03.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO)** (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7) y **pulsar Confirmar.** Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-04.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -46,7 +46,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/26-factura-comercial-de-exportacion-precio-venta-05.webp){ width="624" height="548" loading="lazy" }
 
 ## Errores frecuentes
 

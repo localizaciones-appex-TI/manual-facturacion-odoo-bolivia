@@ -8,17 +8,17 @@ Además de la configuración general de la Parte I, la factura de exportación d
 
 - **Módulo de exportación de servicios activado.** Aplicaciones → buscar «Exportación de Servicios» → «(28) Facturación Comercial de Exportación de Servicios» → Activar.
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 28 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «28 - FACTURA COMERCIAL DE EXPORTACIÓN DE SERVICIOS»: el interruptor Activo debe estar encendido y el campo Documento Sector completo. El documento sector lo trae la sincronización con el SIN y puede corresponder a una actividad distinta de la de los demás documentos (por ejemplo, «001250 - 28 - FCOEXS», de la actividad 001250).
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-02.webp){ width="624" height="448" loading="lazy" }
 
 - **Secuencia en el punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar el tipo 28. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
 - **Productos con un Código SIAT de la misma actividad.** En la pestaña Facturación (BO) del producto, el Código SIAT tiene que ser de la misma actividad que el documento sector (por ejemplo, si el documento sector es de la actividad 001250, el código también: 001250 - 83131).
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-03.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -26,19 +26,19 @@ Además de la configuración general de la Parte I, la factura de exportación d
 
 1. **Completar la cabecera:** Sucursal, Punto de Venta, Tigo Pago y, en Tipo Documento, **28 - FACTURA COMERCIAL DE EXPORTACIÓN DE SERVICIOS**. Este documento **no admite pago con gift card** ni descuento adicional; el descuento, si lo hay, va en la línea.
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-04.webp){ width="624" height="428" loading="lazy" }
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: un servicio por línea, con **cantidad 1** y el precio del servicio.
 
 1. **Completar la pestaña Exportación de Servicios (BO):** en el grupo Datos de la Exportación de Servicios, la **Dirección del comprador**, el **País destino** y el **Lugar destino** (los tres obligatorios). La Información adicional es opcional; sirve, por ejemplo, para la cuenta bancaria del pago.
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-05.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-05.webp){ width="624" height="428" loading="lazy" }
 
 1. **Revisar la pestaña Factura (BO):** la casilla Factura (BO) debe estar marcada y la Leyenda asignada, igual que en la factura de compra-venta (sección [Factura de compra-venta › Paso a paso: crear y emitir la factura](factura-de-compra-venta.md#paso-a-paso-crear-y-emitir-la-factura), paso 7).
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-06.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo se ve la factura impresa y cómo saber si llegó al SIN
 
@@ -48,7 +48,7 @@ Igual que en la compra-venta (sección [Factura de compra-venta › Cómo saber 
 
 Se anula y se revierte igual que las demás facturas (sección 1 de la Parte III), y también se puede emitir fuera de línea (sección 2 de la Parte III).
 
-![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-07.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/17-factura-comercial-de-exportacion-de-servicios-07.webp){ width="624" height="458" loading="lazy" }
 
 ## Errores frecuentes
 

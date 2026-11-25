@@ -10,19 +10,19 @@ Además de la configuración general de la Parte I, la exportación necesita est
 
 - **Módulo de exportación activado.** Aplicaciones → buscar «Exportación» → «(3) Facturacion Comercial de Exportación» → Activar. Sin él, Odoo no muestra la pestaña Datos de Exportación (BO) ni arma el XML de exportación.
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-01.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-01.webp){ width="624" height="428" loading="lazy" }
 
 - **Tipo de documento 3 activo y con su documento sector.** Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Tipo Documento, fila «3 - FACTURA COMERCIAL DE EXPORTACIÓN»: el interruptor Activo debe estar encendido y el campo Documento Sector completo (por ejemplo, «6202000 - 3 - FCE»; depende de la actividad económica registrada en el SIN). Los documentos sector habilitados se consultan en Ajustes → Facturación (BO) → Catálogos SIAT → Códigos de Documento Sector.
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-02.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-02.webp){ width="624" height="428" loading="lazy" }
 
 - **Secuencia en cada punto de venta.** En la pestaña Secuencias Documentos del punto de venta (sección 3.5 de la Parte I) debe figurar 3 - FACTURA COMERCIAL DE EXPORTACIÓN. Si falta, se agrega una línea a mano, como se explica en la sección [Nota de crédito-débito › Qué debe saber antes de emitirla](nota-de-credito-debito.md#que-debe-saber-antes-de-emitirla).
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-03.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-03.webp){ width="624" height="428" loading="lazy" }
 
 - **Productos con Código Nandina.** Todos los productos de la factura deben ser bienes con Código Nandina, en la pestaña Facturación (BO) del producto. Sin él, Odoo no deja confirmar. El Nandina depende del Código SIAT: por ejemplo, el código 47811 - Paquete de sistemas operativos lleva el Nandina 8523.29.33.00, mientras que otros códigos no tienen ninguno y no sirven para exportar.
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-04.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-04.webp){ width="624" height="428" loading="lazy" }
 
 ## La pestaña Datos de Exportación (BO)
 
@@ -40,7 +40,7 @@ Al elegir el tipo de documento 3, la factura muestra la pestaña **Datos de Expo
 
 La ubicación del Incoterm, por ejemplo Puerto de Arica, se completa aparte: pestaña Otra información → campo Ubicación del Incoterm.
 
-![Captura](../img/parte-2/03-factura-comercial-de-exportacion-05.webp){ width="624" loading="lazy" }
+![Captura](../img/parte-2/03-factura-comercial-de-exportacion-05.webp){ width="624" height="428" loading="lazy" }
 
 ## Paso a paso: crear y emitir la factura
 
@@ -50,7 +50,7 @@ La ubicación del Incoterm, por ejemplo Puerto de Arica, se completa aparte: pes
 
 1. **Cargar las líneas** en la pestaña Líneas de factura: solo bienes con Código Nandina, con su cantidad y precio.
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-06.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-06.webp){ width="624" height="428" loading="lazy" }
 
 1. **Completar la pestaña Datos de Exportación (BO)** (sección [La pestaña Datos de Exportación (BO)](#la-pestana-datos-de-exportacion-bo)) y, si corresponde, la Ubicación del Incoterm en Otra información.
 
@@ -58,7 +58,7 @@ La ubicación del Incoterm, por ejemplo Puerto de Arica, se completa aparte: pes
 
 1. **Pulsar Confirmar.** Odoo envía la factura al SIN; suele tardar unos segundos, y hasta un minuto si el SIN está lento. Debe quedar en Registrado, con Estado EDI **VALIDADA**.
 
-    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-07.webp){ width="624" loading="lazy" }
+    ![Captura](../img/parte-2/03-factura-comercial-de-exportacion-07.webp){ width="624" height="428" loading="lazy" }
 
 ## Cómo saber si llegó al SIN
 
