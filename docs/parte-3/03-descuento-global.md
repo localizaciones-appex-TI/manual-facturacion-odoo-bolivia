@@ -17,6 +17,8 @@ Odoo registra el descuento global como una línea con un producto especial. Hay 
 
 1. **Marcarlo como descuento global.** En la pestaña **Facturación (BO)**, activar **Producto/Servicio**; al hacerlo aparece la casilla **Es descuento Global**, que también hay que activar.
 
+    ![Captura](../img/parte-3/03-descuento-global-01.webp){ width="624" height="210" loading="lazy" }
+
 1. **Guardar.**
 
 !!! note "Nota"
@@ -29,14 +31,22 @@ Odoo registra el descuento global como una línea con un producto especial. Hay 
 
 1. **Pulsar el botón de descuento (%)**, debajo de las líneas de la factura, junto a «Términos y condiciones». Solo aparece mientras la factura está en borrador.
 
+    ![Captura](../img/parte-3/03-descuento-global-02.webp){ width="624" height="357" loading="lazy" }
+
 1. **Elegir cómo se expresa el descuento** en la ventana **Descuento global**:
 
     - **Monto:** se escribe el importe a descontar, en la moneda de la factura.
     - **Porcentaje:** se escribe el porcentaje y Odoo calcula el monto sobre el total de la factura.
 
-1. **Pulsar Aplicar.** Odoo agrega una línea con el producto de descuento y precio negativo, y en los totales aparece **Monto de Descuento**.
+    ![Captura](../img/parte-3/03-descuento-global-03.webp){ width="408" height="129" loading="lazy" }
+
+1. **Pulsar Aplicar.** Odoo agrega una línea **Descuento** con precio negativo (usa el producto marcado como descuento global), y en los totales aparece **Monto de Descuento**.
+
+    ![Captura](../img/parte-3/03-descuento-global-04.webp){ width="624" height="372" loading="lazy" }
 
 1. **Confirmar la factura** como siempre. En la factura impresa el descuento sale en la fila **DESCUENTO Bs** de los totales, y el monto a pagar ya lo descuenta.
+
+    ![Captura](../img/parte-3/03-descuento-global-05.webp){ width="624" height="345" loading="lazy" }
 
 Para cambiar el descuento antes de confirmar, se vuelve a pulsar el botón y se aplica el nuevo valor: Odoo reemplaza el monto de la línea de descuento. Para quitarlo, se borra esa línea.
 

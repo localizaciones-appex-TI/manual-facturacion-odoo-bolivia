@@ -129,5 +129,6 @@ nav:
       - "1. Anulación y reversión": parte-3/01-anulacion-y-reversion.md
       - "2. Si el SIN no responde: fuera de línea y eventos significativos": parte-3/02-facturacion-fuera-de-linea-y-eventos-significativo.md
       - "3. Descuento global": parte-3/03-descuento-global.md
+      - "4. Facturación desde el Punto de Venta (TPV)": parte-3/04-facturacion-desde-el-punto-de-venta.md
   - "Preguntas frecuentes": preguntas-frecuentes.md
   - "Glosario": glosario.md
