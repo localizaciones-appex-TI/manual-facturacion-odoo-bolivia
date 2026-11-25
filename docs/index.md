@@ -83,9 +83,3 @@ Cómo configurar Odoo y emitir, anular y regularizar cada documento fiscal ante 
 El manual tiene tres partes. La **[Parte I](parte-1/index.md)** es la configuración inicial, que se hace una sola vez. La **[Parte II](parte-2/index.md)** dedica una página a cada tipo de documento, empezando por la factura de compra-venta; cada documento se identifica por su nombre y su código del SIN. La **[Parte III](parte-3/index.md)** reúne las operaciones que no dependen del tipo de documento. A medida que se habiliten otros tipos de documento, cada uno se agrega como una página nueva de la Parte II.
 
 Las Partes I y III numeran sus secciones desde 1: una referencia sin parte apunta a la misma parte, y una referencia a otra parte la nombra, por ejemplo «sección 3.5 de la Parte I». En la Parte II las referencias son enlaces con el nombre de la sección.
-
-## Control de versiones
-
-| Versión | Fecha | Descripción | Elaborado por |
-|---|---|---|---|
-| 1.0 | 16/11/2026 | Primera versión: configuración inicial, 31 tipos de documento y operaciones comunes. |  |
