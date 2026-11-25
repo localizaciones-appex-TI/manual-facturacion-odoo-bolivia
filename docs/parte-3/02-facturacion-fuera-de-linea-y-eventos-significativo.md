@@ -28,11 +28,19 @@ Esta guía es para el caso más común: el SIN está en mantenimiento o no respo
 
 1. **Abrir el punto de venta** que no puede facturar: Ajustes → Facturación (BO) → Compañia → Puntos de Venta → el punto de venta (sección 3.2 de la Parte I). Si la empresa factura desde varios puntos de venta, se hace en cada uno.
 
+    ![Captura](../img/parte-3/02-si-el-sin-no-responde-01.webp){ width="624" height="355" loading="lazy" }
+
 1. **Pulsar Fuera de línea.** Odoo abre un evento significativo, guarda la hora de inicio y el CUFD que estaba vigente, y muestra los campos **Evento** y **Facturas por Paquete**.
+
+    ![Captura](../img/parte-3/02-si-el-sin-no-responde-02.webp){ width="624" height="386" loading="lazy" }
 
 1. **Revisar el tipo de evento** antes de emitir la primera factura. El evento se crea con el **2** (inaccesibilidad al servicio del SIN), que es el que corresponde a un mantenimiento. Si lo que se cortó es el internet del local, abra el evento desde el campo **Evento** y cámbielo a **1**. Deje **Facturas por Paquete** como está.
 
+    ![Captura](../img/parte-3/02-si-el-sin-no-responde-03.webp){ width="624" height="275" loading="lazy" }
+
 1. **Facturar con normalidad.** Las facturas se crean y se confirman igual que siempre; Odoo completa solo la fecha y hora de emisión. Cada factura queda **Registrada**, con su número y su CUF, pero todavía no está validada por el SIN: se valida cuando se envía, al volver en línea.
+
+    ![Captura](../img/parte-3/02-si-el-sin-no-responde-04.webp){ width="624" height="349" loading="lazy" }
 
 1. **Entregar la factura al cliente** como siempre: impresa o en PDF. Es válida desde que se emite y lleva una leyenda que indica que fue emitida fuera de línea. El cliente puede verificarla en el SIAT cuando termine la contingencia.
 
@@ -41,8 +49,16 @@ Esta guía es para el caso más común: el SIN está en mantenimiento o no respo
 1. **Comprobar que todo quedó validado:**
 
     - Ajustes → Facturación (BO) → Compañia → **Eventos Significativos**: el evento figura con estado **Enviado**.
+
+      ![Captura](../img/parte-3/02-si-el-sin-no-responde-05.webp){ width="624" height="85" loading="lazy" }
+
     - Ajustes → Facturación (BO) → Compañia → **Paquetes**: el paquete del evento tiene sus líneas en `908 - VALIDADA`.
+
+      ![Captura](../img/parte-3/02-si-el-sin-no-responde-06.webp){ width="624" height="209" loading="lazy" }
+
     - En cada factura, el campo **Estado EDI** dice `VALIDADA`.
+
+      ![Captura](../img/parte-3/02-si-el-sin-no-responde-07.webp){ width="624" height="349" loading="lazy" }
 
 !!! note "Nota"
 
