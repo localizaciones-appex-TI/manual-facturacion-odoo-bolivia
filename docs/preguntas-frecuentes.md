@@ -51,7 +51,7 @@ Respuestas cortas a las dudas más comunes. Haga clic en una pregunta para ver l
 
     Sí. Con el módulo Punto de venta (BO), cada venta cobrada en la caja con **Recibo/Factura** marcado se emite como factura de compra-venta al validar el pago. La caja se enlaza una vez con la sucursal y el punto de venta del SIAT, y cada método de pago necesita su tipo de pago del SIAT.
 
-    Ver [Facturación desde el Punto de Venta (TPV)](parte-3/04-facturacion-desde-el-punto-de-venta.md).
+    Ver [Facturación desde el Punto de Venta (PdV)](parte-4/01-facturacion-desde-el-punto-de-venta.md).
 
 ## Corregir una factura
 
